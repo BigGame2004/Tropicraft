@@ -12,7 +12,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 3,
+                "min": 1,
                 "max": 3
               }
             },
@@ -20,22 +20,15 @@
               "function": "looting_enchant",
               "count": {
                 "min": 0,
-                "max": 3
+                "max": 1
               }
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "random_chance_with_looting",
-              "chance": 0.2,
-              "looting_multiplier": 0.05
             }
           ]
         }
       ]
     },
     {
-      "name": "iguanaleather",
+      "name": "iguana_leather",
       "rolls": 1,
       "entries": [
         {
@@ -46,7 +39,14 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "min": 0,
                 "max": 1
               }
             }
