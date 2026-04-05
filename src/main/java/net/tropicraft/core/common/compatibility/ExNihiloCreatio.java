@@ -41,6 +41,7 @@ public class ExNihiloCreatio {
         ItemInfo SpiralCoral = new ItemInfo(new ItemStack(coral, 1, 4));
         ItemInfo TealyCoral = new ItemInfo(new ItemStack(coral, 1, 1));
         ItemInfo ToastedNori = new ItemInfo(new ItemStack(toastedNori));
+        ItemInfo Foliage = new ItemInfo(new ItemStack(flowers, 1, 13));
 
         //ItemInfo  = new ItemInfo(new ItemStack());
 
@@ -63,6 +64,7 @@ public class ExNihiloCreatio {
         COMPOST_REGISTRY.register(SpiralCoral, 0.10f, Dirt, new Color("DB8420"));
         COMPOST_REGISTRY.register(TealyCoral, 0.10f, Dirt, new Color("A75D39"));
         COMPOST_REGISTRY.register(ToastedNori, 0.20f, Dirt, new Color("404822"));
+        COMPOST_REGISTRY.register(Foliage, 0.10f, Dirt, new Color("97CD00"));
 
         //COMPOST_REGISTRY.register(, 0.f, Dirt, new Color(""));
 

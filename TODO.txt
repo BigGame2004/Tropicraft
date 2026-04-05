@@ -41,10 +41,12 @@
 - Fix flippers not doing anything when config "enableSwimAnimation" is set to false or when Aqua Acrobatics is present
 - Fix Home Trees not rendering properly on the client side when first generated (somehow still an issue as of TC 9 for 1.21.8)
 - Fix miss matched block blast resistance for Chunk Slab and all fences
+- Fix right clicking on a mob in creative mode not giving you their spawn egg
+- The bottom of Home Trees almost exclusive spawns buried making the spawners at the bottom never get any use
 
 ## MAYBE ##
 
-- Implement Souzium Aqua tools (implied Souzium ore, no associated sword, see IUnderwaterTool.java)?
+- Implement Souzium Aqua Ore/way to craft the tools?
 - Implement alternative fishing rods with their bait items as fuel?
 - Add a built-in resource pack to undo all texture changes
 - Add a Tropics worldtype
@@ -57,10 +59,11 @@
 - Add bamboo-glass boat?
 - Bring back placeable cocktails?
 - Generate podzol in surface cases?
+- Replace Tropical Water bucket with a forge bucket/make it act like a forge bucket?
 
 ## TODO ##
 
-- Reimplement Fire Pit and place it at the center of koa villages, most likely removed due to its reliance on CoroUtil which was made no longer into a dependency for tropicraft past 1.7
+- Place the Fire Pit at the center of koa villages, also redo it's smoke particles using CoroUtil's extended renderer
 - Fill in all placeholder Encyclopedia entries
 - Finish implementing the diving computer
 - Implement Fire Wand (most likely removed due to its dependence on CoroUtil)
@@ -75,6 +78,7 @@
 - Update languages: french, russian, chinese, etc.
 - Update sapling_palm.png, make it actually look like a palm tree
 - Make Iron Golems Ignore Tropi Creepers and Easter Island Heads
+- Compatibility with Future MC's stone cutter and flower types
 
 ## Dart Gun ##
 

@@ -4,20 +4,18 @@ import cofh.core.util.helpers.ItemHelper;
 import cofh.thermalexpansion.util.managers.device.CoolantManager;
 import cofh.thermalexpansion.util.managers.device.TapperManager;
 import cofh.thermalexpansion.util.managers.dynamo.NumismaticManager;
-import cofh.thermalexpansion.util.managers.machine.FurnaceManager;
-import cofh.thermalexpansion.util.managers.machine.InsolatorManager;
-import cofh.thermalexpansion.util.managers.machine.ExtruderManager;
-import cofh.thermalexpansion.util.managers.machine.SawmillManager;
-import cofh.thermalfoundation.init.TFFluids;
+import cofh.thermalexpansion.util.managers.machine.*;
 import cofh.thermalfoundation.item.ItemMaterial;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fluids.FluidStack;
+import net.tropicraft.core.registry.TCFluidRegistry;
 
 import java.lang.reflect.Method;
 
+import static net.minecraft.init.Items.*;
 import static net.tropicraft.core.registry.BlockRegistry.*;
 import static net.tropicraft.core.registry.ItemRegistry.*;
 
@@ -114,6 +112,13 @@ public class Thermal {
         } catch(Exception ex) {
             ex.printStackTrace();
         }
+
+        // Fluid Transposer
+
+        TransposerManager.addFillRecipe(4000, new ItemStack(BUCKET), new ItemStack(tropicsWaterBucket), new FluidStack(TCFluidRegistry.tropicsWater, 1000), false);
+
+        TransposerManager.addExtractRecipe(400, new ItemStack(tropicsWaterBucket), new ItemStack(BUCKET), new FluidStack(TCFluidRegistry.tropicsWater, 1000), 0, false);
+
     }
 
     public static void postInit() {}

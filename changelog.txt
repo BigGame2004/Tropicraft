@@ -1,6 +1,22 @@
 7.1.9.127 for 1.12.2
+New
+- Tropical Water Buckets can now be filled and emptied using a Thermal Expansion Fluid Transposer (_BIG_G_)
+
+Changes
+- Added bamboo shoots to the "cropBamboo" ore dictionary (_BIG_G_)
+- Changed Chunk fences to be crafted with bamboo sticks to better match the chunk fence gate (_BIG_G_)
+
+Fixes
+- Fixed Foliage plants not being compostable in Ex Nihilo Creatio (_BIG_G_)
+
+
+
 
 - The blocks Easter Island Heads can spawn with as eyes are now controlled by a config (ACGaming)
+
+
+
+
 
 7.1.9.126 for 1.12.2:
 New
@@ -69,7 +85,7 @@ New
         - Chunk o' head as well as all types of tropical sands can now be produced in an igneous extruder (_BIG_G_)
 Changes
 - Added tones of ore dictionary entries to various items and blocks, for all foods, flowers and the shaka ore (like anyone's gonna need that) (_BIG_G_)
-- Packed Purified Sand can nw be crafted using four blocks of Purified Sand (_BIG_G_)
+- Packed Purified Sand can now be crafted using four blocks of Purified Sand (_BIG_G_)
 
 7.1.9.122 for 1.12.2:
 Changes
@@ -80,7 +96,7 @@ Changes
 
 7.1.9.121 for 1.12.2:
 New
-- Pineapples and Coconuts can now be processed into cubes and chunks respectively using the Harvestcraft Cutting Board when Said mod is present (_BIG_G_)
+- Pineapples and Coconuts can now be processed into cubes and chunks respectively using the Harvestcraft Cutting Board when said mod is present (_BIG_G_)
 - Added a new encyclopedia entry for Nigel's Stache (_BIG_G_)
 - Added two (not really new) advancements, one for crafting a Piña colada and one for drinking it (_BIG_G_)
 Changes
@@ -119,7 +135,7 @@ New
 - Backported Bamboo, Mahogany, Palm and Thatch trapdoors, although as of right now none of them can be used as furnace fuel (_BIG_G_)
 Fixes
 - Fixed bamboo being usable inplace of bamboo sticks (_BIG_G_)
-- Also fixed bamboo sticks not being craftable due to a mass text swap breaking it's recipe (_BIG_G_)
+- Also fixed bamboo sticks not being craftable due to a mass text swap breaking its recipe (_BIG_G_)
 - Tiki Torches can now be crafted with Coal Coke if a mod that adds it is present (_BIG_G_)
 
 7.1.9.116 for 1.12.2:

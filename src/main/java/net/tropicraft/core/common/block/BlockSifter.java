@@ -27,7 +27,10 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.tropicraft.core.common.block.tileentity.TileEntityFactory;
 import net.tropicraft.core.common.block.tileentity.TileEntitySifter;
+import net.tropicraft.core.common.enums.TropicraftSands;
 import net.tropicraft.core.registry.BlockRegistry;
+
+import static net.tropicraft.core.common.block.BlockTropicraftSands.VARIANT;
 
 public class BlockSifter extends BlockTropicraft implements ITileEntityProvider {
 

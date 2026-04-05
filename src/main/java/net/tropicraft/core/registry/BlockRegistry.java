@@ -298,7 +298,7 @@ public class BlockRegistry extends TropicraftRegistry {
 		
 		planks = registerBlock(registry, new BlockTropicraftPlank(Material.WOOD), "plank", new MultiBlockItemCreator(TropicraftPlanks.VALUES).withOredict("plankWood", OreDictionary.WILDCARD_VALUE));
 		
-		bambooShoot = registerBlock(registry, new BlockBambooShoot(), Names.BAMBOO_SHOOT, new SimpleItemCreator(Names.BAMBOO_SHOOT, false).withOredict("bamboo", 0).withOredict("cropBambooshoot", 0));
+		bambooShoot = registerBlock(registry, new BlockBambooShoot(), Names.BAMBOO_SHOOT, new SimpleItemCreator(Names.BAMBOO_SHOOT, false).withOredict("bamboo", 0).withOredict("cropBambooshoot", 0).withOredict("cropBamboo", 0));
 		thatchStairs = registerBlock(registry, new BlockTropicraftStairs(bundles.defaultForVariant(TropicraftBundles.THATCH)), Names.BLOCK_THATCH_STAIRS, new SimpleItemCreator(Names.BLOCK_THATCH_STAIRS, true));
 		bambooStairs = registerBlock(registry, new BlockTropicraftStairs(bundles.defaultForVariant(TropicraftBundles.BAMBOO)), Names.BLOCK_BAMBOO_STAIRS, new SimpleItemCreator(Names.BLOCK_BAMBOO_STAIRS, true));
 		palmStairs = registerBlock(registry, new BlockTropicraftStairs(planks.defaultForVariant(TropicraftPlanks.PALM)), Names.BLOCK_PALM_STAIRS, new SimpleItemCreator(Names.BLOCK_PALM_STAIRS, true).withOredict("stairsWood", OreDictionary.WILDCARD_VALUE));

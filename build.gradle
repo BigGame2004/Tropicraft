@@ -74,6 +74,7 @@ dependencies {
     compileOnly "curse.maven:immersive-engineering-231951:2974106"
     compileOnly "curse.maven:ex-nihilo-creatio-274456:2817545"
     compileOnly "curse.maven:coroutil-237749:2902920"
+    compileOnly "curse.maven:future-mc-310059:6162819"
 }
 
 processResources

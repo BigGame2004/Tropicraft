@@ -6,9 +6,11 @@ import java.util.Random;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
@@ -22,10 +24,14 @@ import net.minecraft.world.storage.loot.LootTable;
 import net.tropicraft.Names;
 import net.tropicraft.core.common.block.tileentity.message.MessageSifterInventory;
 import net.tropicraft.core.common.block.tileentity.message.MessageSifterStart;
+import net.tropicraft.core.common.enums.TropicraftSands;
 import net.tropicraft.core.common.enums.TropicraftShells;
 import net.tropicraft.core.common.network.TCPacketHandler;
+import net.tropicraft.core.registry.BlockRegistry;
 import net.tropicraft.core.registry.ItemRegistry;
 import net.tropicraft.core.registry.LootRegistry;
+
+import static net.tropicraft.core.common.block.BlockTropicraftSands.VARIANT;
 
 public class TileEntitySifter extends TileEntity implements ITickable {
 
@@ -80,6 +86,35 @@ public class TileEntitySifter extends TileEntity implements ITickable {
 	 * Drop all the necessary blocks/items from the sifter after sifting is complete
 	 */
 	public void dumpResults(double x, double y, double z, SiftType type) {
+
+		/*
+		if (getWorld().isRemote) return;
+		LootTable table = getWorld().getLootTableManager().getLootTableFromLocation(isHeatedSifter() == LootRegistry.sifterHeated);
+		LootContext.Builder builder = new LootContext.Builder((WorldServer) getWorld());
+		List<ItemStack> drops = table.generateLootForPools(rand, builder.build());
+		for (ItemStack stack : drops) {
+			if (!stack.isEmpty()) {
+				spawn(stack, x, y, z);
+			}
+		}
+
+		IBlockState state = world.getBlockState(pos);
+
+		if (type == SiftType.HEATED) {
+
+			if (siftItem.getItem() == Item.getItemFromBlock(BlockRegistry.sands) && ((state.getValue(VARIANT) == TropicraftSands.MINERAL)))
+				siftItem = new ItemStack(ItemRegistry.dart);
+
+			spawn(siftItem, x, y, z);
+
+		} else {
+			dumpBeachResults(x, y, z);
+		}
+		this.syncInventory();
+		*/
+
+		// if sifter type = heated AND sift item is sands type mineral then and only then use heated sifter loot registry.
+
 		// NOTE: Removed check and drop for heated sifter in 1.12
 		dumpBeachResults(x, y, z);
 		this.syncInventory();

@@ -51,8 +51,9 @@ public class WorldGenTropicsTreasure extends TCGenBase {
                     for (int surroundX = x - sandArea; surroundX <= x + sandArea; surroundX++) {
                         BlockPos pos3 = new BlockPos(surroundX, j, surroundZ);
                         if (!sandBlocks.contains(worldObj.getBlockState(pos3).getBlock())) {
+                            System.out.println("Not a good enough spot for buried treasure, keep looking.");
                             continue tryagain;
-                        } System.out.println("Not a good enough spot for buried treasure, keep looking.");
+                        }
 
                     }
                 }
@@ -61,7 +62,7 @@ public class WorldGenTropicsTreasure extends TCGenBase {
                 BlockPos chestPos = new BlockPos(x, y - depth, z);
                 if (!sandBlocks.contains(worldObj.getBlockState(chestPos).getBlock())) {
                     continue tryagain;
-                } System.err.println("Generating Treasure chest at: " + i + " " + y + " " + k);
+                }
 
                 // Draw the X that marks the spot
                 int count = 0;
@@ -79,6 +80,8 @@ public class WorldGenTropicsTreasure extends TCGenBase {
                 if (!worldObj.isRemote) {
                     chestPos = new BlockPos(x - sandArea, y - depth, z - sandArea);
                     worldObj.setBlockState(chestPos, BlockRegistry.bambooChest.getDefaultState(), 2);
+
+                    System.err.println("Generating Treasure chest at: " + i + " " + y + " " + k);
 
                     TileEntityChest chest = (TileEntityChest) worldObj.getTileEntity(chestPos);
                     if (chest == null) {
@@ -116,7 +119,7 @@ public class WorldGenTropicsTreasure extends TCGenBase {
         data.scale = 3;
         data.dimension = (byte)worldObj.provider.getDimension();
         data.markDirty();
-        System.out.println("");
+        System.out.println("Map has been initialized.");
     }
 
 }

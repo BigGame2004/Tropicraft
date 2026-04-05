@@ -97,6 +97,7 @@ public class TropicsConfigs {
     public static boolean enableRailcraftModule = true;
     public static boolean enableImmersiveEngineeringModule = true;
     public static boolean enableExNihiloCreatioModule = true;
+    //public static boolean enableFutureMCModule = true;
 
     private static Configuration config;
 
@@ -148,12 +149,15 @@ public class TropicsConfigs {
         spawnPassiveTropicsLandMobsOverworld = config.get(C_ENTITY, "spawnPassiveTropicsLandMobsOverworld", spawnPassiveTropicsLandMobsOverworld, "Should Tropicraft's passive land mobs spawn in the overworld?").getBoolean();
         spawnHostileTropicsLandMobsOverworld = config.get(C_ENTITY, "spawnHostileTropicsLandMobsOverworld", spawnHostileTropicsLandMobsOverworld, "Should Tropicraft's hostile land mobs spawn in the overworld?").getBoolean();
 
+        // Modules
+
         enableForestryModule = config.get(C_MODULES, "enableForestryModule", enableForestryModule, "Enable or disable the Forestry compatibility module. [default: true]").getBoolean();
         enableThermalModule = config.get(C_MODULES, "enableThermalModule", enableThermalModule, "Enable or disable the Thermal Expansion compatibility module. [default: true]").getBoolean();
         //enableHarvestcraftModule = config.get(C_MODULES, "enableHarvestcraftModule", enableHarvestcraftModule, "Enable or disable the Harvestcraft compatibility module. It currently does nothing :( [default: true]").getBoolean();
         enableRailcraftModule = config.get(C_MODULES, "enableRailcraftModule", enableRailcraftModule, "Enable or disable the Railcraft compatibility module. [default: true]").getBoolean();
         enableImmersiveEngineeringModule = config.get(C_MODULES, "enableImmersiveEngineeringModule", enableImmersiveEngineeringModule, "Enable or disable the Immersive Engineering compatibility module. [default: true]").getBoolean();
         enableExNihiloCreatioModule = config.get(C_MODULES, "enableExNihiloCreatioModule", enableExNihiloCreatioModule, "Enable or disable the Ex Nihilo Creatio compatibility module. [default: true]").getBoolean();
+        //enableFutureMCModule = config.get(C_MODULES, "enableFutureMCModule", enableFutureMCModule, "Enable or disable the Future MC compatibility module. [default: true]").getBoolean();
 
         config.setCategoryComment(C_DONATIONS, "Used for the LoveTropics charity drive.");
         tiltifyAppToken = config.get(C_DONATIONS, "tiltifyAppToken", tiltifyAppToken, "Add a token here to enable donation tracking, leave blank to disable").getString();

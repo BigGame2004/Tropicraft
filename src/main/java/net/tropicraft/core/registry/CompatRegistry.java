@@ -21,6 +21,7 @@ public class CompatRegistry {
         if (Loader.isModLoaded("railcraft") && enableRailcraftModule) Railcraft.preInit();
         if (Loader.isModLoaded("immersiveengineering") && enableImmersiveEngineeringModule) ImmersiveEngineering.preInit();
         if (Loader.isModLoaded("exnihilocreatio") && enableExNihiloCreatioModule) ExNihiloCreatio.preInit();
+        //if (Loader.isModLoaded("futuremc") && enableFutureMCModule) FutureMC.preInit();
 
         //if (Loader.isModLoaded("") && ) .preInit();
     }
@@ -33,6 +34,7 @@ public class CompatRegistry {
         if (Loader.isModLoaded("railcraft") && enableRailcraftModule)  Railcraft.init();
         if (Loader.isModLoaded("immersiveengineering") && enableImmersiveEngineeringModule)  ImmersiveEngineering.init();
         if (Loader.isModLoaded("exnihilocreatio") && enableExNihiloCreatioModule) ExNihiloCreatio.init();
+        //if (Loader.isModLoaded("futuremc") && enableFutureMCModule) FutureMC.preInit();
 
         //if (Loader.isModLoaded("") && ) .init();
     }
@@ -45,6 +47,7 @@ public class CompatRegistry {
         if (Loader.isModLoaded("railcraft") && enableRailcraftModule) Railcraft.postInit();
         if (Loader.isModLoaded("immersiveengineering") && enableImmersiveEngineeringModule) ImmersiveEngineering.postInit();
         if (Loader.isModLoaded("exnihilocreatio") && enableExNihiloCreatioModule) ExNihiloCreatio.postInit();
+        //if (Loader.isModLoaded("futuremc") && enableFutureMCModule) FutureMC.preInit();
 
         //if (Loader.isModLoaded("") && ) .postInit();
     }
