@@ -34,6 +34,7 @@
 - Fix Bamboo Flower Pots: - Not dropping the flower they contain (present as early as TC 7.0 for 1.10.2)
                           - Trying to put a pineapple or iris flower in a bamboo flower pot will cause the item to be consumed but not displayed in the pot itself (present as early as TC 7.0 for 1.10.2)
                           - Trying to middle mouse click (MMB3) in creative mode to pick the bamboo flower pot will give the player the vanilla flower pot (present as early as TC 7.0 for 1.10.2)
+- Add signs and pressure plates
 - Fix "Drifting into the tropics" loading screen being broken when Fermium is present
 - Fix buried treasures not spawning (in 1.7 they were marked by patches of purified sand)
 - Fix Chunk o Head... things not going back to sleep properly after being awakened by the player
@@ -44,55 +45,54 @@
 - Fix miss matched block blast resistance for Chunk Slab and all fences
 - Fix right clicking on a mob in creative mode not giving you their spawn egg
 - The bottom of Home Trees almost exclusive spawns buried making the spawners at the bottom never get any use
-- Add signs and pressure plates
 
 ## MAYBE ##
 
-- Implement Souzium Aqua Ore/way to craft the tools?
-- Implement alternative fishing rods with their bait items as fuel?
+- Add "Assorted Nuts"...?
 - Add a built-in resource pack to undo all texture changes
 - Add a Tropics worldtype
+- Add bamboo-glass boat?
 - Add Unlimited Chiselworks compat
+- Add watefalls that lead into rivers?
 - Bring back coral sands spawning on beaches OR modify coral sands encyclopedia description
+- Bring back placeable cocktails?
+- Disable collision and make Bamboo Shoots break instantly like in TC 1.5.2?
+- Fix Donation Block no longer working?
+- Generate podzol in surface cases?
+- Implement alternative fishing rods with their bait items as fuel?
+- Implement Lava Slinger? https://tropicraft.fandom.com/wiki/Lava_slinger
+- Implement Souzium Aqua Ore/way to craft the tools?
+- Make koa trades unlock like villager trades?
 - Make the tiki torch look more like a tiki torch
 - Rebalance tool stats?
-- Make koa trades unlock like villager trades?
-- Fix Donation Block no longer working?
-- Add bamboo-glass boat?
-- Bring back placeable cocktails?
-- Generate podzol in surface cases?
 - Replace Tropical Water bucket with a forge bucket/make it act like a forge bucket?
-- Disable collision and make Bamboo Shoots break instantly like in TC 1.5.2?
 - What is Chunk Hammer and Chunk Wedge from TC 3.0.0?
-- Add "Assorted Nuts"...?
-- Add watefalls that lead into rivers?
-- Implement Lava Slinger? https://tropicraft.fandom.com/wiki/Lava_slinger
 
 ## TODO ##
 
-- Make adult turtles drop turtle shells (- Fixed adult turtles not dropping turtle shells)
-- Fix Iris Flowers and bamboo crafting table not being part of their respective ore dictionaries
-- Place the Fire Pit at the center of koa villages, also redo it's smoke particles using CoroUtil's extended renderer
+- Compatibility with Future MC's stone cutter and flower types
 - Fill in all placeholder Encyclopedia entries
+- Find out why custom EIH eye blocks aren't working (- The blocks Easter Island Heads can spawn with as eyes are now controlled by a config (ACGaming))
 - Finish implementing the diving computer
+- Fix Iris Flowers and bamboo crafting table not being part of their respective ore dictionaries
 - Implement Fire Wand (most likely removed due to its dependence on CoroUtil)
 - Implement Ice Wand (most likely removed due to its dependence on CoroUtil)
 - Implement Leaf Ball (most likely removed due to its dependence on CoroUtil)
 - Implement Tame Wand (most likely removed due to its dependence on CoroUtil)
+- Make adult turtles drop turtle shells (- Fixed adult turtles not dropping turtle shells)
 - Make fire armor craftable by throwing scale armor in lava
+- Make Iron Golems Ignore Tropi Creepers and Easter Island Heads
 - Make trapdoors work as furnace fuels
+- Place the Fire Pit at the center of koa villages, also redo it's smoke particles using CoroUtil's extended renderer
 - Reimplement Forrest Altar Ruins, see WorldGenForrestAltarRuin.java, most likely removed due to procedural structures never being reimplemented
 - Rewrite encyclopedia entity page type, make them not only get unlocked if you give yourself the spawn eggs of mobs
 - Update bamboo flower pot item texture to better match the vanilla flower pot
 - Update languages: french, russian, chinese, etc.
 - Update sapling_palm.png, make it actually look like a palm tree
-- Make Iron Golems Ignore Tropi Creepers and Easter Island Heads
-- Compatibility with Future MC's stone cutter and flower types
-- Find out why custom EIH eye blocks aren't working (- The blocks Easter Island Heads can spawn with as eyes are now controlled by a config (ACGaming))
 
 ## Dart Gun ##
 
-- Fix AIAshenShootDart behaviour making them shoot slowness arrows instead of slowness darts
+- Fix AIAshenShootDart behaviour making them shoot slowness arrows instead of paralyzing darts
 - Fix Dart gun rendering on Ashen
 
 - Implement Ashen being able to use the new dart gun
