@@ -84,4 +84,25 @@ public class TropicraftSounds {
 
     @SoundName("rainforest")
     public static SoundEvent RAINFOREST = null;
+
+    @SoundName("monkeyhurt")
+    public static SoundEvent MONKEYHURT = null;
+
+    @SoundName("monkeyangry")
+    public static SoundEvent MONKEYANGRY = null;
+
+    @SoundName("monkeyliving")
+    public static SoundEvent MONKEYLIVING = null;
+
+    @SoundName("monkeydrinking")
+    public static SoundEvent MONKEYDRINKING = null;
+
+    @SoundName("monkeyhiccup")
+    public static SoundEvent MONKEYHICCUP = null;
+
+    @SoundName("darthit")
+    public static SoundEvent DARTHIT = null;
+
+    @SoundName("dartblow")
+    public static SoundEvent DARTBLOW = null;
 }

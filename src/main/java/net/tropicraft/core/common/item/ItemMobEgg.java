@@ -2,6 +2,7 @@ package net.tropicraft.core.common.item;
 
 import javax.annotation.Nullable;
 
+import mods.railcraft.common.util.misc.Capabilities;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -79,6 +80,9 @@ public class ItemMobEgg extends ItemTropicraft {
                 ySpawnOffset = 0.5D;
 
             spawnCreature(world, s, (double)pos.getX() + 0.5D, (double)pos.getY() + ySpawnOffset, (double)pos.getZ() + 0.5D);
+            if (!player.capabilities.isCreativeMode) {
+                itemstack.shrink(1);
+            }
         }
 
         return EnumActionResult.SUCCESS;

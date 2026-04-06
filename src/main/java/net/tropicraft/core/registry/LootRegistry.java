@@ -32,6 +32,7 @@ public class LootRegistry extends TropicraftRegistry {
     public static ResourceLocation failgull;
     public static ResourceLocation manOWar;
     public static ResourceLocation seaUrchin;
+    public static ResourceLocation seaTurtle;
     public static ResourceLocation starfish;
     public static ResourceLocation dolphin;
     public static ResourceLocation eagleRay;
@@ -71,6 +72,7 @@ public class LootRegistry extends TropicraftRegistry {
         failgull = LootTableList.register(new ResourceLocation(Info.MODID, "entities/failgull"));
         manOWar = LootTableList.register(new ResourceLocation(Info.MODID, "entities/man_o_war"));
         seaUrchin = LootTableList.register(new ResourceLocation(Info.MODID, "entities/sea_urchin"));
+        seaTurtle = LootTableList.register(new ResourceLocation(Info.MODID, "entities/sea_turtle"));
         starfish = LootTableList.register(new ResourceLocation(Info.MODID, "entities/starfish"));
         dolphin = LootTableList.register(new ResourceLocation(Info.MODID, "entities/dolphin"));
         eagleRay = LootTableList.register(new ResourceLocation(Info.MODID, "entities/eagle_ray"));

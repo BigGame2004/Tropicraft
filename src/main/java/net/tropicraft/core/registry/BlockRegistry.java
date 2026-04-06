@@ -317,7 +317,7 @@ public class BlockRegistry extends TropicraftRegistry {
 
 		pineapple = registerBlock(registry, new BlockPineapple(), "pineapple");
 		iris = registerBlock(registry, new BlockIris(), "iris");
-			OreDictionary.registerOre("flower", pineapple);
+		//	OreDictionary.registerOre("flower", pineapple);
 
 		coffeePlant = registerBlock(registry, new BlockCoffeeBush(), "coffee_bush", (IBlockItemRegistrar) null);
 
@@ -349,7 +349,7 @@ public class BlockRegistry extends TropicraftRegistry {
 		thatchTrapdoor = registerBlockNoItem(registry, new BlockThatchTrapdoor(), Names.THATCH_TRAPDOOR);
 
 		bambooCraftingTable = registerBlock(registry, new BlockBambooCraftingTable(), Names.BAMBOO_CRAFTING_TABLE);
-			OreDictionary.registerOre("workbench", bambooCraftingTable);
+		//	OreDictionary.registerOre("workbench", bambooCraftingTable);
 
 		bongo = registerBlock(registry, new BlockBongoDrum(), Names.BONGO, new MultiBlockItemCreator(TropicraftBongos.VALUES));
 

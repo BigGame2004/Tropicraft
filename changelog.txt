@@ -1,22 +1,19 @@
 7.1.9.127 for 1.12.2
 New
 - Tropical Water Buckets can now be filled and emptied using a Thermal Expansion Fluid Transposer (_BIG_G_)
+- Brought back ambient sound effects for the tropical portal (_BIG_G_)
+- The Fire Pit now uses fire sound effects (_BIG_G_)
 
 Changes
 - Added bamboo shoots to the "cropBamboo" ore dictionary (_BIG_G_)
 - Changed Chunk fences to be crafted with bamboo sticks to better match the chunk fence gate (_BIG_G_)
+- Brought back the old dart gun shooting sound effect, also made it much easier to hear (_BIG_G_)
 
 Fixes
 - Fixed Foliage plants not being compostable in Ex Nihilo Creatio (_BIG_G_)
-
-
-
-
-- The blocks Easter Island Heads can spawn with as eyes are now controlled by a config (ACGaming)
-
-
-
-
+- Fixed alternative fire pit recipe using wood logs instead of charcoal (_BIG_G_)
+- Restored unused monkey sound effects (_BIG_G_)
+- Fixed spawn eggs not getting consumed while in survival mode (_BIG_G_)
 
 7.1.9.126 for 1.12.2:
 New
@@ -640,15 +637,16 @@ Fixes
 - Tribal Fishing Rod should not be visible in TMI anymore
 - Fixed Eudialyte Axe Recipe
 
-3.0.2 for 1.:
+3.0.1 for 1.2.5:
 
-3.0.1 for 1.:
-
-3.0 for 1.:
+3.0 for 1.2.5:
 
 2.5.1 for 1.0.0:
+-Added bamboo fences, craftable like in this image: (which has been lost)
+- Added back scale armor
 
 2.5 for 1.0.0:
+- Temporarily removed scale armor due to changes in the way minecraft handles it's armor
 
 2.4 for b1.8.1:
 - Palm Tree leaf decay works correctly now
@@ -662,7 +660,7 @@ Fixes
 - Spawn rates of ALL mobs have been fixed!
 - Curved palm trees now face the water when they grow!
 
-2.3 for:
+2.3 for :
 
 2.2 for b1.7.3:
 - Bamboo no longer drops coconuts
@@ -689,7 +687,7 @@ Mobs
 - Iguanas have almost double the health as before
 - Added sounds for Easter Island Heads and Iguanas
 Misc
-- Gold swords make cocoonut chunks (Bug discovered thanks to GameChap and Bertie's video :D)
+- Gold swords make cocoonut chunks (Bug discovered thanks to GameChap and Bertie's video :D) (found it https://youtu.be/iAMLex_mjwo)
 - Hitting palm wood sounds like stone
 - Added Bamboo blocks, slabs, and stairs
 - Added Thatch blocks, slabs, and stairs

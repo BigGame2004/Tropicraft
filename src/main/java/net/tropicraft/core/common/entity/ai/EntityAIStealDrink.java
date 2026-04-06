@@ -10,6 +10,7 @@ import net.tropicraft.core.common.drinks.MixerRecipe;
 import net.tropicraft.core.common.drinks.MixerRecipes;
 import net.tropicraft.core.common.entity.passive.EntityVMonkey;
 import net.tropicraft.core.common.item.ItemCocktail;
+import net.tropicraft.core.common.sound.TropicraftSounds;
 
 public class EntityAIStealDrink extends EntityAIBase {
     private EntityVMonkey entity;

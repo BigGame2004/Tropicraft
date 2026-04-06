@@ -26,7 +26,15 @@ public class TCFluidRegistry {
 		tropicsPortal.setBlock(BlockRegistry.tropicsPortal);
 
 		TCFluidRegistry.registerFluid(tropicsWater);
-		//TODO no longer needed? FluidContainerRegistry.registerFluidContainer(tropicsWater, new ItemStack(ItemRegistry.tropicsWaterBucket));
+
+		/*
+		// This creates a forge fluid bucket containing tropical water, now here comes the hard part, using it in code that requires an itemstack ;)
+		// Using forge buckets also doesn't trigger the arm swing animation
+		FluidRegistry.addBucketForFluid(tropicsWater);
+		// Of course doesVaporize only works with forge buckets
+		tropicsWater.doesVaporize(new FluidStack(tropicsWater, 1000));
+		tropicsPortal.doesVaporize(new FluidStack(tropicsPortal, 1000));
+		 */
 	}
 
 	private static void registerFluid(Fluid fluid) {

@@ -200,8 +200,8 @@ public class WorldGenHomeTree extends TCGenBase {
 			genLeafCircle(bnode.x2, bnode.y2 + 2, bnode.z2, lSize + 9, 0, leaves, true);
 		}
 
-		int topBranches = rand.nextInt(6) + 6;
-		/*for(int x = 0; x < topBranches; x++)
+		/*int topBranches = rand.nextInt(6) + 6;
+		for(int x = 0; x < topBranches; x++)
 		{
 			int branchLength = rand.nextInt(10) + 15;
 			int baseDistance = rand.nextInt(trunkRadius - 3);

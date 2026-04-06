@@ -4,7 +4,6 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Enchantments;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
@@ -13,6 +12,7 @@ import net.minecraft.util.*;
 import net.minecraft.world.World;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.tropicraft.core.common.entity.projectile.EntityDart;
+import net.tropicraft.core.common.sound.TropicraftSounds;
 import net.tropicraft.core.registry.ItemRegistry;
 
 public class ItemDartGun extends ItemTropicraft {
@@ -72,7 +72,7 @@ public class ItemDartGun extends ItemTropicraft {
             }
             world.spawnEntity(dart);
         }
-        world.playSound(null, player.posX, player.posY, player.posZ, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + velocity * 0.5F);
+        world.playSound(null, player.posX, player.posY, player.posZ, TropicraftSounds.DARTBLOW, SoundCategory.PLAYERS, 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + velocity * 0.5F);
         itemStack.damageItem(1, player);
         if (!creative && !player.capabilities.isCreativeMode) {
             dartStack.shrink(1);

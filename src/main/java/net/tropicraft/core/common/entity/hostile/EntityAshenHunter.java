@@ -72,7 +72,7 @@ public class EntityAshenHunter extends EntityAshen {
 	
 	@Override
 	public void swingArm(EnumHand hand) {
-		//this.setSwinging(true);
+		this.setSwinging(true);
 		this.isSwingInProgress = true;
 	}
 	

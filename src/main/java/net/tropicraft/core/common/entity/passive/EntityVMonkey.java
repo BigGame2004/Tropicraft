@@ -18,12 +18,15 @@ import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 import net.tropicraft.core.common.drinks.Drink;
 import net.tropicraft.core.common.entity.EntityLandTameable;
 import net.tropicraft.core.common.entity.ai.*;
 import net.tropicraft.core.common.item.ItemCocktail;
+import net.tropicraft.core.common.sound.TropicraftSounds;
 import net.tropicraft.core.registry.ItemRegistry;
+import net.minecraft.potion.Potion;
 
 import javax.annotation.Nullable;
 
@@ -152,6 +155,37 @@ public class EntityVMonkey extends EntityLandTameable implements IEntityFollower
 
         return false;
     }
+
+	// Somehow add the monkey drink sound event when a monkey drinks a piña colada... somehow, somewhere
+	// return TropicraftSounds.MONKEYDRINKING;
+
+	// For some reason monkeys have been missing sounds since 1.6
+	@Override
+	protected SoundEvent getAmbientSound() {
+		// Monkeys do not get nausea from drinking piña coladas, so this probably doesn't work :(
+		if (this.isPotionActive(Potion.getPotionById(9))) {
+			return TropicraftSounds.MONKEYHICCUP;
+		}
+		if (isAngry()) {
+			return TropicraftSounds.MONKEYANGRY;
+		} else
+			return TropicraftSounds.MONKEYLIVING;
+	}
+
+	@Override
+	protected SoundEvent getHurtSound(DamageSource damageSource) {
+		return TropicraftSounds.MONKEYHURT;
+	}
+
+	@Override
+	protected SoundEvent getDeathSound() {
+		return null;
+	}
+
+	@Override
+	protected float getSoundVolume() {
+		return 1.0F;
+	}
 
 	@Override
 	protected void applyEntityAttributes() {

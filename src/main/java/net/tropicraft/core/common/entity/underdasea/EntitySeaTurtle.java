@@ -28,6 +28,9 @@ import net.tropicraft.core.common.entity.underdasea.atlantoku.EntityTropicraftWa
 import net.tropicraft.core.common.entity.underdasea.atlantoku.IAmphibian;
 import net.tropicraft.core.registry.BlockRegistry;
 
+import static net.tropicraft.core.registry.LootRegistry.seaTurtle;
+import static net.tropicraft.core.registry.LootRegistry.seaUrchin;
+
 public class EntitySeaTurtle extends EntityTropicraftWaterBase implements IAmphibian {
 
 	private static final long EGG_SITE_WAIT_TIME = 450L;
@@ -73,6 +76,14 @@ public class EntitySeaTurtle extends EntityTropicraftWaterBase implements IAmphi
 		this.getDataManager().register(IS_MATURE, false);
 		this.assignRandomTexture();
 	}
+
+	/*
+	@Nullable
+	protected ResourceLocation getLootTable() {
+		return isChild() ? null : seaTurtle;
+
+	}
+	*/
 
 	@Override
 	public String[] getTexturePool() {
