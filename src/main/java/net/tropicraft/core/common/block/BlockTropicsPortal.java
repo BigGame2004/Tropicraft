@@ -17,10 +17,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.MobEffects;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -35,6 +34,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.tropicraft.core.common.ChatUtil;
 import net.tropicraft.core.common.dimension.TropicraftWorldUtils;
+import net.tropicraft.core.common.sound.TropicraftSounds;
 
 public class BlockTropicsPortal extends BlockFluidClassic {
 
@@ -148,6 +148,9 @@ public class BlockTropicsPortal extends BlockFluidClassic {
 	public void randomDisplayTick(IBlockState state, World world, BlockPos pos, Random rand) {
 		if (world.isRemote) {
 			sparkle(state, world, pos);
+		}
+		if (rand.nextInt(100) == 0) {
+			world.playSound((double) pos.getX() + 0.5D, (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D, TropicraftSounds.PORTAL, SoundCategory.BLOCKS, 0.5F, rand.nextFloat() * 0.0F + 0.0F, false);
 		}
 	}
 

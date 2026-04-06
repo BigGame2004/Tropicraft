@@ -75,4 +75,13 @@ public class TropicraftSounds {
     
     @SoundName("dolphin")
     public static SoundEvent DOLPHIN = null;
+
+    @SoundName("portal")
+    public static SoundEvent PORTAL = null;
+
+    @SoundName("softwaves")
+    public static SoundEvent SOFTWAVES = null;
+
+    @SoundName("rainforest")
+    public static SoundEvent RAINFOREST = null;
 }

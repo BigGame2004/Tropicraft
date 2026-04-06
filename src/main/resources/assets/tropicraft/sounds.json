@@ -57,5 +57,8 @@
 			}
 		]
 	},
-	"page_flip": { "category": "master", "sounds": [ "tropicraft:page_flip" ] }
+	"page_flip": { "category": "master", "sounds": [ "tropicraft:page_flip" ] },
+	"portal": { "category": "entity", "sounds": [ "tropicraft:ambient/portal1", "tropicraft:ambient/portal2", "tropicraft:ambient/portal3", "tropicraft:ambient/portal1" ] },
+	"softwaves": { "category": "entity", "sounds": [ "tropicraft:ambient/softwaves1", "tropicraft:ambient/softwaves2", "tropicraft:ambient/softwaves3", "tropicraft:ambient/softwaves4" ] },
+	"rainforest": { "category": "entity", "sounds": [ "tropicraft:ambient/rainforest1", "tropicraft:ambient/rainforest2", "tropicraft:ambient/rainforest3", "tropicraft:ambient/rainforest4", "tropicraft:ambient/rainforest5", "tropicraft:ambient/rainforest6", "tropicraft:ambient/rainforest7", "tropicraft:ambient/rainforest8", "tropicraft:ambient/rainforest9", "tropicraft:ambient/rainforest10"] }
 }

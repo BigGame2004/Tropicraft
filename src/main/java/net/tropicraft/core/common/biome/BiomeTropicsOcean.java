@@ -1,5 +1,6 @@
 package net.tropicraft.core.common.biome;
 
+import net.minecraft.util.SoundEvent;
 import net.tropicraft.core.common.biome.decorators.BiomeDecoratorTropicsOcean;
 import net.tropicraft.core.common.entity.passive.EntityFailgull;
 import net.tropicraft.core.common.entity.underdasea.EntityManOWar;
@@ -12,6 +13,7 @@ import net.tropicraft.core.common.entity.underdasea.atlantoku.EntityMarlin;
 import net.tropicraft.core.common.entity.underdasea.atlantoku.EntitySeahorse;
 import net.tropicraft.core.common.entity.underdasea.atlantoku.EntityShark;
 import net.tropicraft.core.common.entity.underdasea.atlantoku.EntityTropicalFish;
+import net.tropicraft.core.common.sound.TropicraftSounds;
 import net.tropicraft.core.registry.BlockRegistry;
 
 public class BiomeTropicsOcean extends BiomeTropicraft {
@@ -35,4 +37,7 @@ public class BiomeTropicsOcean extends BiomeTropicraft {
         this.topBlock = this.fillerBlock = BlockRegistry.sands.getDefaultState();
 	}
 
+    public SoundEvent getAmbientSound() {
+        return TropicraftSounds.SOFTWAVES;
+    }
 }
