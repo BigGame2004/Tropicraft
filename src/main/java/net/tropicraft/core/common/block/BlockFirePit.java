@@ -2,8 +2,10 @@ package net.tropicraft.core.common.block;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -74,6 +76,8 @@ public class BlockFirePit extends BlockTropicraft {
         double d = (float) pos.getX() + 0.5F;
         double d1 = (float) pos.getY() + 0.3F;
         double d2 = (float) pos.getZ() + 0.5F;
+
+        world.playSound((double)((float)pos.getX() + 0.5F), (double)((float)pos.getY() + 0.5F), (double)((float)pos.getZ() + 0.5F), SoundEvents.BLOCK_FIRE_AMBIENT, SoundCategory.BLOCKS, 1.0F + random.nextFloat(), random.nextFloat() * 0.7F + 0.3F, false);
 
         // TODO if CoroUtil is present use it's smoke particles instead, also probably make this into a tile entity for that.
 
