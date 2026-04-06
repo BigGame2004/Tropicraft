@@ -69,7 +69,14 @@ public class BlockTropicraftOre extends BlockTropicraftEnumVariants<TropicraftOr
     @Override
     public int getExpDrop(IBlockState state, IBlockAccess world, BlockPos pos, int fortune) {
         Random rand = world instanceof World ? ((World)world).rand : new Random();
-        return MathHelper.getInt(rand, 2, 7);
+        TropicraftOres variant = getVariant(state);
+
+        // You know who else is a lazy impl?
+        if (variant == TropicraftOres.MANGANESE || variant == TropicraftOres.SHAKA) {
+            return 0;
+        } else {
+            return MathHelper.getInt(rand, 2, 7);
+        }
     }
     
     /**
