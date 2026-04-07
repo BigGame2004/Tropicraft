@@ -10,17 +10,21 @@ import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.monster.IMob;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.World;
 import net.tropicraft.core.common.entity.EntityLand;
 import net.tropicraft.core.common.entity.projectile.EntityPoisonBlot;
+import net.tropicraft.core.common.sound.TropicraftSounds;
 
 import javax.annotation.Nullable;
 
@@ -128,8 +132,7 @@ public class EntityTreeFrog extends EntityLand implements IMob, IRangedAttackMob
 			entitypoisonblot.posY += 1.3999999761581421D;
 			double d2 = (entity.posY + (double) entity.getEyeHeight()) - 0.20000000298023224D - entitypoisonblot.posY;
 			float f1 = MathHelper.sqrt(d * d + d1 * d1) * 0.2F;
-			// world.playSoundAtEntity(this, "frogspit", 1.0F, 1.0F / (rand.nextFloat() *
-			// 0.4F + 0.8F));
+			this.playSound(this.getSpitSound(), 1.0F, 1.0F / (rand.nextFloat() * 0.4F + 0.8F));
 			world.spawnEntity(entitypoisonblot);
 			entitypoisonblot.shoot(d, d2 + (double) f1, d1, 0.6F, 12F);
 			attackTime = 50;
@@ -138,6 +141,11 @@ public class EntityTreeFrog extends EntityLand implements IMob, IRangedAttackMob
 			// hasAttacked = true;
 		}
 
+	}
+
+	protected SoundEvent getSpitSound()
+	{
+		return TropicraftSounds.FROGSPIT;
 	}
 
 	public Type getType() {

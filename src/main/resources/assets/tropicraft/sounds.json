@@ -65,5 +65,6 @@
 	"monkeyliving": { "category": "entity", "sounds": [ "tropicraft:entities/monkeyliving" ] },
 	"monkeydrinking": { "category": "entity", "sounds": [ "tropicraft:entities/monkeydrinking" ] },
 	"dartblow": { "category": "player", "sounds": [ "tropicraft:dartblow" ] },
-	"darthit": { "category": "entity", "sounds": [ "tropicraft:darthit" ] }
+	"darthit": { "category": "entity", "sounds": [ "tropicraft:darthit" ] },
+	"frogspit": { "category": "entity", "sounds": [ "tropicraft:entities/frogspit" ] }
 }

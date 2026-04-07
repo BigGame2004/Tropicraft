@@ -105,4 +105,7 @@ public class TropicraftSounds {
 
     @SoundName("dartblow")
     public static SoundEvent DARTBLOW = null;
+
+    @SoundName("frogspit")
+    public static SoundEvent FROGSPIT = null;
 }
