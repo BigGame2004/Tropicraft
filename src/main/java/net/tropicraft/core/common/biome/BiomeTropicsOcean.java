@@ -37,7 +37,10 @@ public class BiomeTropicsOcean extends BiomeTropicraft {
         this.topBlock = this.fillerBlock = BlockRegistry.sands.getDefaultState();
 	}
 
+    /*
+	// Nope
     public SoundEvent getAmbientSound() {
         return TropicraftSounds.SOFTWAVES;
     }
+    */
 }

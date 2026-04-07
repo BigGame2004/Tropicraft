@@ -32,7 +32,10 @@ public class BiomeRainforest extends BiomeTropicraft {
         this.generateBiomeTerrain(worldIn, rand, chunkPrimerIn, x, z, noiseVal);
     }
 
+	/*
+	// Nope
 	public SoundEvent getAmbientSound() {
 		return TropicraftSounds.RAINFOREST;
 	}
+	*/
 }
