@@ -34,6 +34,7 @@ public class BlockDonation extends Block implements ITileEntityProvider {
 	public void addInformation(ItemStack stack, @Nullable World player, List<String> tooltip, ITooltipFlag advanced) {
 	    super.addInformation(stack, player, tooltip, advanced);
 	    tooltip.add(I18n.format(getUnlocalizedName() + ".tooltip"));
+		tooltip.add(I18n.format(getUnlocalizedName() + ".tooltip1"));
 	}
 
 }

@@ -98,7 +98,8 @@ tile.tropicraft.portal_wall.name=Tropics Portal Wall
 tile.tropicraft.bamboo_ladder.name=Bamboo Ladder
 tile.tropicraft.packed_purified_sand.name=Packed Purified Sand
 tile.tropicraft.donation.name=Donation Alert Spawner
-tile.tropicraft.donation.tooltip=Spawns fireworks when a donation is received!\nCurrently out of order :(
+tile.tropicraft.donation.tooltip=Spawns fireworks when a donation is received!
+tile.tropicraft.donation.tooltip1=Currently out of order :(
 tile.tropicraft.bamboo_crafting_table.name=Bamboo Crafting Table
 
 # Item localizations
