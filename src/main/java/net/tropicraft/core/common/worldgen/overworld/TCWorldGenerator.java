@@ -65,6 +65,7 @@ public class TCWorldGenerator implements IWorldGenerator {
                     }	
                 }
 
+                // This doesn't work.
                 if (TropicsConfigs.genOverworldEIH && random.nextInt(GenRates.EIH_CHANCE) == 0) {
                     l = random.nextInt(62) + 64;
                     BlockPos eihPos = new BlockPos(k, l, i1);

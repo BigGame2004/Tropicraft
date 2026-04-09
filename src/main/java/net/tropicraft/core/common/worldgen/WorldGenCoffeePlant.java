@@ -85,7 +85,7 @@ public class WorldGenCoffeePlant extends TCGenBase {
 			return false;
 		}
 		
-		TCGenUtils.setBlockState(worldObj, nx + viableDirection.getFrontOffsetX(), ny - 1, nz + viableDirection.getFrontOffsetZ(), Blocks.WATER.getDefaultState(), blockGenNotifyFlag);
+		TCGenUtils.setBlockState(worldObj, nx + viableDirection.getFrontOffsetX(), ny - 1, nz + viableDirection.getFrontOffsetZ(), BlockRegistry.tropicsWater.getDefaultState(), blockGenNotifyFlag);
 		TCGenUtils.setBlockState(worldObj, nx, ny - 1, nz, Blocks.FARMLAND.getDefaultState(), blockGenNotifyFlag);
 		
 		for (int i = 0; i < 3; ++i) {
