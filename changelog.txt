@@ -3,12 +3,14 @@ New
 - Tropical Water Buckets can now be filled and emptied using a Thermal Expansion Fluid Transposer (_BIG_G_)
 - Brought back ambient sound effects for the tropical portal (_BIG_G_)
 - The Fire Pit now uses fire sound effects (_BIG_G_)
+- Brought back the old water falls from 1.7, although they are just as rare (_BIG_G_)
 
 Changes
 - Added bamboo shoots to the "cropBamboo" ore dictionary (_BIG_G_)
 - Changed Chunk fences to be crafted with bamboo sticks to better match the chunk fence gate (_BIG_G_)
 - Brought back the old dart gun shooting sound effect, also made it much easier to hear (_BIG_G_)
 - Shaka and Manganese ores no longer drop experience (_BIG_G_)
+- Changed coffee plants to spawn with tropical water instead of vanilla water (_BIG_G_)
 
 Fixes
 - Fixed Foliage plants not being compostable in Ex Nihilo Creatio (_BIG_G_)
@@ -16,6 +18,7 @@ Fixes
 - Restored unused monkey sound effects (_BIG_G_)
 - Fixed spawn eggs not getting consumed while in survival mode (_BIG_G_)
 - Fixed the donation block's tooltip (_BIG_G_)
+- Restored unused frog spitting sound effect (_BIG_G_)
 
 7.1.9.126 for 1.12.2:
 New

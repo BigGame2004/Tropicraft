@@ -3,6 +3,7 @@
 - Can volcano's actually erupt?
 - Jumping while having the fire boots equipped above lava will kick you to the bottom of the pool?
 - Monkeys do not get nausea from drinking piña coladas?
+- Easter Island Heads are supposed to spawn in the overworld too???
 
 ## FIX ##
 
@@ -37,14 +38,15 @@
 - Add signs and pressure plates
 - Fix "Drifting into the tropics" loading screen being broken when Fermium is present
 - Fix buried treasures not spawning (in 1.7 they were marked by patches of purified sand)
-- Fix Chunk o Head... things not going back to sleep properly after being awakened by the player
+- Fix Easter Island Heads not going back to sleep properly after being awakened by the player or getting angry from players walking nearby
 - Fix Coconut Bomb entity... more like coconut drill
 - Fix fence gates using the wrong soundtypes
 - Fix flippers not doing anything when config "enableSwimAnimation" is set to false or when Aqua Acrobatics is present
 - Fix Home Trees not rendering properly on the client side when first generated (somehow still an issue as of TC 9 for 1.21.8)
 - Fix miss matched block blast resistance for Chunk Slab and all fences
 - Fix right clicking on a mob in creative mode not giving you their spawn egg
-- The bottom of Home Trees almost exclusive spawns buried making the spawners at the bottom never get any use
+- The bottom of Home Trees almost exclusively spawns buried making the spawners at the bottom never get any use
+- Fix Z axis infighting on items like the love tropics shells and cocktails
 
 ## MAYBE ##
 
@@ -67,9 +69,12 @@
 - Rebalance tool stats?
 - Replace Tropical Water bucket with a forge bucket/make it act like a forge bucket?
 - What is Chunk Hammer and Chunk Wedge from TC 3.0.0?
+- Add tinkers construct compatibility, also figure out what that'd mean?
 
 ## TODO ##
 
+- Unify the 4 pina coladas into a single item
+- Add crafttweaker support for the drink mixer
 - Compatibility with Future MC's stone cutter and flower types
 - Fill in all placeholder Encyclopedia entries
 - Find out why custom EIH eye blocks aren't working (- The blocks Easter Island Heads can spawn with as eyes are now controlled by a config (ACGaming))
@@ -89,6 +94,8 @@
 - Update bamboo flower pot item texture to better match the vanilla flower pot
 - Update languages: french, russian, chinese, etc.
 - Update sapling_palm.png, make it actually look like a palm tree
+- Make tropical water buckets vaporize in the nether OR replace them with forge
+- Make bamboo sticks usable as furnace fuel
 
 ## Dart Gun ##
 
