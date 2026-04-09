@@ -42,11 +42,13 @@ public class BiomeDecoratorRainforest extends BiomeDecoratorTropicraft {
 			int zz = rand.nextInt(16) + cz + 8;
 			new WorldGenHomeTree(world, rand).generate(new BlockPos(xx, 0, zz));
 		}
-		//
-		//		if(rand.nextInt(ALTAR_CHANCE) == 0) {
-		//			new WorldGenForestAltarRuin(world, rand).generate(randDecorationCoord(rand, x, 16), 0, randDecorationCoord(rand, x, 16));
-		//		}
-		//
+
+		/*
+		if(rand.nextInt(ALTAR_CHANCE) == 0) {
+			new WorldGenForestAltarRuin(world, rand).generate(randDecorationCoord(rand, x, 16), 0, randDecorationCoord(rand, x, 16));
+		}
+		*/
+
 		for (int l = 0; l < TropicsConfigs.rainforestThicknessAmount; l++) {
 		    i = randDecorationCoord(rand, x, 2) + 8;
 		    k = randDecorationCoord(rand, z, 2) + 8;

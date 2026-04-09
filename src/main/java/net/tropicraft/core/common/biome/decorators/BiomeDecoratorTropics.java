@@ -7,14 +7,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
 import net.tropicraft.configuration.GenRates;
 import net.tropicraft.core.common.biome.BiomeTropicraft;
-import net.tropicraft.core.common.worldgen.WorldGenBamboo;
-import net.tropicraft.core.common.worldgen.WorldGenCurvedPalms;
-import net.tropicraft.core.common.worldgen.WorldGenEIH;
-import net.tropicraft.core.common.worldgen.WorldGenFruitTrees;
-import net.tropicraft.core.common.worldgen.WorldGenLargePalmTrees;
-import net.tropicraft.core.common.worldgen.WorldGenNormalPalms;
-import net.tropicraft.core.common.worldgen.WorldGenTallFlower;
-import net.tropicraft.core.common.worldgen.WorldGenTropicalFlowers;
+import net.tropicraft.core.common.dimension.WorldProviderTropicraft;
+import net.tropicraft.core.common.worldgen.*;
 import net.tropicraft.core.registry.BlockRegistry;
 
 public class BiomeDecoratorTropics extends BiomeDecoratorTropicraft {
@@ -123,10 +117,13 @@ public class BiomeDecoratorTropics extends BiomeDecoratorTropicraft {
 
 		BiomeDecoratorTropicsBeach.decorateForVillage(world, rand, chunkPos);
 
-        //
-        //      for(int a = 0; a < ConfigGenRates.WATERFALL_AMOUNT; a++) {
-        //          new WorldGenWaterfall(world, rand).generate(randDecorationCoord(rand, x, 16), WorldProviderTropicraft.MID_HEIGHT + rand.nextInt(WorldProviderTropicraft.INTER_HEIGHT), randDecorationCoord(rand, z, 16));
-        //      }
-	}
+		for(int a = 0; a < GenRates.WATERFALL_AMOUNT; a++) {
+			int y = 0;
+			i = randDecorationCoord(rand, chunkPos.getX(), 16) + 8;
+			k = randDecorationCoord(rand, chunkPos.getZ(), 16) + 8;
+			y = WorldProviderTropicraft.MID_HEIGHT + rand.nextInt(WorldProviderTropicraft.INTER_HEIGHT);
 
+			new WorldGenWaterfall(world, rand).generate(new BlockPos(i, y, k));
+		}
+	}
 }

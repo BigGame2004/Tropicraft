@@ -7,10 +7,8 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockVine;
 import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.tileentity.TileEntityMobSpawner;
 import net.minecraft.util.ResourceLocation;
@@ -20,11 +18,9 @@ import net.minecraft.world.World;
 import net.tropicraft.Info;
 import net.tropicraft.core.common.block.BlockTropicraftLeaves;
 import net.tropicraft.core.common.block.BlockTropicraftLog;
-import net.tropicraft.core.common.enums.AshenMasks;
 import net.tropicraft.core.common.enums.TropicraftLeaves;
 import net.tropicraft.core.common.enums.TropicraftLogs;
 import net.tropicraft.core.registry.BlockRegistry;
-import net.tropicraft.core.registry.ItemRegistry;
 import net.tropicraft.core.registry.LootRegistry;
 
 public class WorldGenHomeTree extends TCGenBase {

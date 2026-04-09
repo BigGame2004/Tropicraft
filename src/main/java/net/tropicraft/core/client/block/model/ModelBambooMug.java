@@ -90,6 +90,7 @@ public class ModelBambooMug extends ModelBase {
         handlebottom.render(f5);
         handle.render(f5);
 
+        // Is this not supposed to not also dye the liquid color to match the drink
         if (renderLiquid) {
             float red = (float)(liquidColor >> 16 & 255) / 255.0F;
             float green = (float)(liquidColor >> 8 & 255) / 255.0F;

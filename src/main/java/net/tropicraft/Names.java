@@ -14,12 +14,13 @@ public final class Names {
 	public static final String TROPICS_PORTAL = "portal";
 	public static final String TROPICS_PORTAL_TELEPORTER = "portal_teleporter";
 	public static final String BAMBOO_CHEST = "bamboo_chest";
+	//public static final String BAMBOO_MUG = "bamboo_mug";
 	public static final String COCONUT = "coconut";
-	public static final String[] TALL_PLANT_NAMES = {"stem", "plant"};
+	//public static final String[] TALL_PLANT_NAMES = {"stem", "plant"};
 	public static final String VOLCANO = "volcano";
 	public static final String[] IRIS_NAMES = {"iris_stem", "iris_plant"};
 	public static final String PORTAL_WALL = "portal_wall";
-	public static final String TIKI_TORCH = "tiki_torch";
+	//public static final String TIKI_TORCH = "tiki_torch";
 	public static final String DRINK_MIXER = "drink_mixer";
 	public static final String SIFTER = "sifter";
 	public static final String FLOWER_POT = "flower_pot";
@@ -36,18 +37,18 @@ public final class Names {
 	public static final String BONGO = "bongo";
     public static final String AIR_COMPRESSOR = "air_compressor";
 	public static final String FIRE_PIT = "fire_pit";
-    public static final String BAMBOO_FENCE = "bamboo_fence";
-    public static final String BAMBOO_FENCE_GATE = "bamboo_fence_gate";
-    public static final String THATCH_FENCE = "thatch_fence";
-    public static final String THATCH_FENCE_GATE = "thatch_fence_gate";
-    public static final String CHUNK_FENCE = "chunk_fence";
-    public static final String CHUNK_FENCE_GATE = "chunk_fence_gate";
-    public static final String PALM_FENCE = "palm_fence";
-    public static final String PALM_FENCE_GATE = "palm_fence_gate";
-    public static final String MAHOGANY_FENCE = "mahogany_fence";
-    public static final String MAHOGANY_FENCE_GATE = "mahogany_fence_gate";
+    //public static final String BAMBOO_FENCE = "bamboo_fence";
+    //public static final String BAMBOO_FENCE_GATE = "bamboo_fence_gate";
+    //public static final String THATCH_FENCE = "thatch_fence";
+    //public static final String THATCH_FENCE_GATE = "thatch_fence_gate";
+    //public static final String CHUNK_FENCE = "chunk_fence";
+    //public static final String CHUNK_FENCE_GATE = "chunk_fence_gate";
+    //public static final String PALM_FENCE = "palm_fence";
+    //public static final String PALM_FENCE_GATE = "palm_fence_gate";
+    //public static final String MAHOGANY_FENCE = "mahogany_fence";
+    //public static final String MAHOGANY_FENCE_GATE = "mahogany_fence_gate";
     public static final String BAMBOO_LADDER = "bamboo_ladder";
-    public static final String PACKED_PURIFIED_SAND = "packed_purified_sand";
+    //public static final String PACKED_PURIFIED_SAND = "packed_purified_sand";
 	public static final String DONATION = "donation";
 
 	// Item names

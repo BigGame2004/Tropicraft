@@ -168,6 +168,7 @@ public class BlockRegistry extends TropicraftRegistry {
 	public static Block fruitLeaves;
 
 	public static Block bambooChest;
+	//public static BlockBambooMug bambooMug;
 	
 	public static Block saplings;
 	
@@ -310,6 +311,7 @@ public class BlockRegistry extends TropicraftRegistry {
 		fruitLeaves = registerBlock(registry, new BlockFruitLeaves(), "leaves_fruit", new MultiBlockItemCreator(TropicraftFruitLeaves.VALUES).withOredict("treeLeaves", OreDictionary.WILDCARD_VALUE));
 
 		bambooChest = registerBlock(registry, new BlockBambooChest(), Names.BAMBOO_CHEST);
+		//bambooMug = registerBlock(registry, new BlockBambooMug(), Names.BAMBOO_MUG);
 		
 		saplings = registerBlock(registry, new BlockTropicsSapling(), "sapling", new StandardItemCreator(TropicraftSaplings.VALUES).withOredict("treeSapling", OreDictionary.WILDCARD_VALUE));
 		

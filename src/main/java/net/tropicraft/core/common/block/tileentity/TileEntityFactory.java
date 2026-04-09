@@ -15,11 +15,11 @@ public class TileEntityFactory {
     public static TileEntity getBambooChestTE() {
         return new TileEntityBambooChest();
     }
-    //    
-    //    public static TileEntity getBambooMugTE() {
-    //        return new TileEntityBambooMug();
-    //    }
-    //
+    /*
+    public static TileEntity getBambooMugTE() {
+        return new TileEntityBambooMug();
+    }
+    */
     //    public static TileEntity getCurareBowlTE() {
     //        return new TileEntityCurareBowl();
     //    }

@@ -19,10 +19,10 @@ public class Ingredient implements Comparable<Ingredient> {
 
 	public static final Ingredient[] ingredientsList = new Ingredient[24];
 	public static final Ingredient sugar = new Ingredient(0, new ItemStack(Items.SUGAR), false, 0xffffff, 0.1f).addAction(new DrinkActionFood(1, 0.1f));
-	//  public static final Ingredient lemonJuice = new Ingredient(1, new ItemStack(TropicraftMod.lemonJuice), true, 0xffff00).addAction(new DrinkActionFood(2, 0.2f));
-	//  public static final Ingredient limeJuice = new Ingredient(2, new ItemStack(TropicraftMod.limeJuice), true, 0x7fff00).addAction(new DrinkActionFood(2, 0.2f));
-	//  public static final Ingredient orangeJuice = new Ingredient(3, new ItemStack(TropicraftMod.orangeJuice), true, 0xffa500).addAction(new DrinkActionFood(3, 0.2f));
-	//  public static final Ingredient grapefruitJuice = new Ingredient(4, new ItemStack(TropicraftMod.grapefruitJuice), true, 0xff6347).addAction(new DrinkActionFood(4, 0.2f));
+	//  public static final Ingredient lemonJuice = new Ingredient(1, new ItemStack(ItemRegistry.lemonJuice), true, 0xffff00).addAction(new DrinkActionFood(2, 0.2f));
+	//  public static final Ingredient limeJuice = new Ingredient(2, new ItemStack(ItemRegistry.limeJuice), true, 0x7fff00).addAction(new DrinkActionFood(2, 0.2f));
+	//  public static final Ingredient orangeJuice = new Ingredient(3, new ItemStack(ItemRegistry.orangeJuice), true, 0xffa500).addAction(new DrinkActionFood(3, 0.2f));
+	//  public static final Ingredient grapefruitJuice = new Ingredient(4, new ItemStack(ItemRegistry.grapefruitJuice), true, 0xff6347).addAction(new DrinkActionFood(4, 0.2f));
 	public static final Ingredient lemon = new Ingredient(5, new ItemStack(ItemRegistry.lemon), true, 0xffff00).addAction(new DrinkActionFood(2, 0.2f));
 	public static final Ingredient lime = new Ingredient(6, new ItemStack(ItemRegistry.lime), true, 0x7fff00).addAction(new DrinkActionFood(2, 0.2f));
 	public static final Ingredient orange = new Ingredient(7, new ItemStack(ItemRegistry.orange), true, 0xffa500).addAction(new DrinkActionFood(3, 0.2f));
