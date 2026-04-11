@@ -17,7 +17,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 ext.buildnumber = 0
-project.buildnumber = System.getenv('BUILD_NUMBER') ?: '127'
+project.buildnumber = System.getenv('BUILD_NUMBER') ?: '128'
 
 boolean dev = System.getenv('RELEASE') == null || System.getenv('RELEASE').equals('false');
 
