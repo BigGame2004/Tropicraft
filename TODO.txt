@@ -96,6 +96,7 @@
 - Update sapling_palm.png, make it actually look like a palm tree
 - Make tropical water buckets vaporize in the nether OR replace them with forge
 - Make bamboo sticks usable as furnace fuel
+- Pina coladas aren't treated as food by other mods
 
 ## Dart Gun ##
 

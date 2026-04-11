@@ -1,14 +1,16 @@
 package net.tropicraft.core.common.compatibility;
 
-import com.google.common.base.Preconditions;
 import forestry.api.core.ForestryAPI;
 import forestry.api.fuels.FermenterFuel;
 import forestry.api.fuels.FuelManager;
 import forestry.api.recipes.RecipeManagers;
+import forestry.api.storage.ICrateRegistry;
+import forestry.api.storage.StorageManager;
 import forestry.core.config.Constants;
 import forestry.core.fluids.Fluids;
 import forestry.core.items.ItemRegistryCore;
 import forestry.farming.FarmRegistry;
+import forestry.farming.logic.FarmLogicArboreal;
 import forestry.farming.logic.ForestryFarmIdentifier;
 import forestry.farming.logic.farmables.FarmableAgingCrop;
 import forestry.farming.logic.farmables.FarmableSapling;
@@ -16,16 +18,11 @@ import forestry.modules.ForestryModuleUids;
 import forestry.modules.ModuleHelper;
 
 import net.minecraft.block.properties.IProperty;
-import net.minecraft.client.renderer.block.model.ModelBakery;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
 
 import static forestry.api.core.ForestryAPI.moduleManager;
-import static forestry.api.storage.StorageManager.crateRegistry;
 import static forestry.core.ModuleCore.getItems;
 
 import static net.tropicraft.core.registry.BlockRegistry.*;
@@ -91,6 +88,8 @@ public class Forestry {
 
             if (moduleManager.isModuleEnabled(Constants.MOD_ID, ForestryModuleUids.CRATE)) {
 
+                ICrateRegistry crateRegistry = StorageManager.crateRegistry;
+
                 crateRegistry.registerCrate(MahoganyLog);
                 crateRegistry.registerCrate(PalmLog);
 
@@ -122,12 +121,16 @@ public class Forestry {
                 crateRegistry.registerCrate(whitePearl);
                 crateRegistry.registerCrate(fertilizer);
                 crateRegistry.registerCrate(iguanaLeather);
-            }*/
+            }
 
             // Arboretum
 
-            //FarmRegistry.getInstance().registerFarmables(ForestryFarmIdentifier.ARBOREAL, new FarmableSapling(new ItemStack(saplings), new ItemStack[0]));
+            // Let TC saplings be used in the arboretum
+            FarmRegistry.getInstance().registerFarmables(ForestryFarmIdentifier.ARBOREAL, new FarmableSapling(new ItemStack(saplings, 1, 0), new ItemStack[0]));
 
+            // Makes all tropicraft sands
+            FarmRegistry.getInstance().registerLogic(ForestryFarmIdentifier.ARBOREAL, FarmLogicArboreal::new).registerSoil(new ItemStack(sands, 1, 0), sands.getDefaultState());
+            */
             // Crop Farm
 
             if (ModuleHelper.isEnabled(ForestryModuleUids.FARMING) && ForestryFarmIdentifier.CROPS != null) {
