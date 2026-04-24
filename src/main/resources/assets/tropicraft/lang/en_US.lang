@@ -354,6 +354,13 @@ item.tropicraft.mask_ashen_mask3.name=Ashen Mask
 item.tropicraft.mask_ashen_mask4.name=Ashen Mask
 item.tropicraft.mask_ashen_mask5.name=Ashen Mask
 
+# Enchantments
+enchantment.bane_of_reptiles=Bane of Reptiles
+enchantment.fruit_ninja=Fruit Ninja
+enchantment.scuba_steve=Scuba Steve
+enchantment.beach_combing=Beach Combing
+enchantment.midas_touch=Midas Touch
+
 # Menu localizations
 itemGroup.tropicraft=Tropicraft Legacy
 

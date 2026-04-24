@@ -4,10 +4,7 @@ import java.util.UUID;
 
 import javax.annotation.Nullable;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityCreature;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.*;
 import net.minecraft.entity.ai.EntityAIAttackMelee;
 import net.minecraft.entity.ai.EntityAIHurtByTarget;
 import net.minecraft.entity.ai.EntityAILookIdle;
@@ -26,6 +23,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 import net.tropicraft.core.common.entity.EntityLandHostile;
+import net.tropicraft.core.common.entity.TropiCreatureAttribute;
 import net.tropicraft.core.common.sound.TropicraftSounds;
 
 import static net.tropicraft.core.registry.LootRegistry.iguana;
@@ -193,6 +191,14 @@ public class EntityIguana extends EntityLandHostile implements IMob {
 			return super.attackEntityFrom(source, amount);
 		}
 	}
+
+	/**
+	 * Get this Entity's TropiCreatureAttribute
+	 */
+	//@Override
+	//public TropiCreatureAttribute getCreatureAttribute() {
+	//	return TropiCreatureAttribute.REPTILE;
+	//}
 
 	/**
 	 * Causes this Iguana to become angry at the supplied Entity (which will be a player).
