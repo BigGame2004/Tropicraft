@@ -14,6 +14,7 @@ import org.apache.commons.lang3.ArrayUtils;
 
 import static net.tropicraft.core.common.worldgen.TCGenUtils.setBlock;
 import static net.tropicraft.core.registry.BlockRegistry.*;
+import static net.tropicraft.core.registry.BlockRegistry.flowerPot;
 import static net.tropicraft.core.registry.ItemRegistry.*;
 
 public class WorldGenForestAltarRuin extends TCDirectionalGen {
@@ -41,8 +42,8 @@ public class WorldGenForestAltarRuin extends TCDirectionalGen {
         }
 
 
-        for(int y = j; worldObj.getBlock(i, y, k) != Blocks.AIR; y++) {
-            if(worldObj.getBlock(i, y, k) == tropicsWater) {
+        for(int y = j; worldObj.getBlockState(i, y, k) != Blocks.AIR; y++) {
+            if(worldObj.getBlockState(i, y, k) == tropicsWater) {
                 return false;
             }
         }
@@ -51,7 +52,7 @@ public class WorldGenForestAltarRuin extends TCDirectionalGen {
             mainloop:
             for(int x = 0; x < width; x++) {
                 for(int y = 0; y < 4; y++) {
-                    if(world.getBlock(x, y + j, z) == logs) {
+                    if(worldObj.getBlockState(x, y + j, z) == logs) {
                         continue mainloop;
                     }
                     if(rand.nextInt(4) != 0) {
@@ -181,7 +182,7 @@ public class WorldGenForestAltarRuin extends TCDirectionalGen {
         }
         else if(picker < 12)
         {
-            return new ItemStack(thatchBundle, rand.nextInt(20) + 1);
+            return new ItemStack((bundles, 1, 0), rand.nextInt(20) + 1);
         }
         else if(picker < 14)
         {

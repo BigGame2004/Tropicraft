@@ -1,6 +1,8 @@
 package net.tropicraft.core.registry;
 
 import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
+import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fml.common.Mod;
 import net.tropicraft.Names;
 import net.tropicraft.core.common.fluid.FluidTropicsPortal;
@@ -18,7 +20,7 @@ public class TCFluidRegistry {
 	}
 
 	/**
-	 * Initialization, called after TCBlockRegistry.init so the blocks are not null when
+	 * Initialization, called after BlockRegistry.init so the blocks are not null when
 	 * matched up with the fluids
 	 */
 	public static void postInit() {
@@ -33,8 +35,7 @@ public class TCFluidRegistry {
 		FluidRegistry.addBucketForFluid(tropicsWater);
 		// Of course doesVaporize only works with forge buckets
 		tropicsWater.doesVaporize(new FluidStack(tropicsWater, 1000));
-		tropicsPortal.doesVaporize(new FluidStack(tropicsPortal, 1000));
-		 */
+		*/
 	}
 
 	private static void registerFluid(Fluid fluid) {

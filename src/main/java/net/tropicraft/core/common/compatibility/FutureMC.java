@@ -1,3 +1,4 @@
+/*
 package net.tropicraft.core.common.compatibility;
 
 import net.minecraft.init.Items;
@@ -14,6 +15,8 @@ public class FutureMC {
 
     public static void init() {
 
+        // Of course, I've no idea how to interface java with kotlin.
+
         //BeePollinationHandler.registerHandler(iris, handler?);
 
         //StonecutterRecipes();
@@ -22,3 +25,4 @@ public class FutureMC {
 
     public static void postInit() {}
 }
+*/

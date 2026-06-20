@@ -1,3 +1,4 @@
+/*
 package net.tropicraft.core.common.compatibility;
 
 import net.minecraft.block.material.Material;
@@ -10,3 +11,4 @@ public abstract class UnlimitedChiselWorks extends BlockTropicraft implements IU
         super(mat);
     }
 }
+*/

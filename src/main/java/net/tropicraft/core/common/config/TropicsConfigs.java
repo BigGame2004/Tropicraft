@@ -99,6 +99,12 @@ public class TropicsConfigs {
     public static boolean enableExNihiloCreatioModule = true;
     //public static boolean enableFutureMCModule = true;
 
+    /*
+    public static String[] reptilesList = new String[] {
+            "tropicraft:iguana",
+            "minecraft:ender_dragon"
+    };*/
+
     private static Configuration config;
 
     public static void init(File file) {
@@ -165,7 +171,9 @@ public class TropicsConfigs {
         donationTrackerRefreshRate = config.get(C_DONATIONS, "donationTrackerRefreshRate", donationTrackerRefreshRate, "How often the tracker checks for new donations, in seconds").getInt();
         tiltifyCommandRun = config.get(C_DONATIONS, "tiltifyCommandRun", tiltifyCommandRun, "Command run when donation comes in").getString();
         donationAmountPerMonument = config.get(C_DONATIONS, "donationAmountPerMonument", donationAmountPerMonument, "Amount of $ required per monument command run").getInt();
-        
+
+        //reptilesList = config.get(C_MISC, "reptilesList", reptilesList, "List of entities that should be treated as reptiles by the Bane of Reptiles enchantment.").getStringList();
+
         config.save();
     }
 

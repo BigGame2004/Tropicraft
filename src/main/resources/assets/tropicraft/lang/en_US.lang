@@ -330,6 +330,7 @@ tropicraft.drink.coconut_water.name=Coconut Water
 tropicraft.drink.pina_colada.name=Piña Colada
 tropicraft.drink.black_coffee.name=Black Coffee
 tropicraft.drink.mai_tai.name=Mai Tai
+#tropicraft.drink.hot_cocoa.name=Hot Cocoa
 
 # Record localizations
 item.tropicraft.buried_treasure.name=Buried Treasure

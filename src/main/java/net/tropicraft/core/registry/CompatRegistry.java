@@ -11,8 +11,7 @@ public class CompatRegistry {
     @SubscribeEvent
     public static void preInit() {
 
-        // IF the mod in question is present AND if its respective module is enabled in the configs then also enable its
-        // compatibility module.
+        // IF the mod in question is present AND IF its respective module is enabled in the configs then also enable its compatibility module.
 
         if (Loader.isModLoaded("forestry") && enableForestryModule) Forestry.preInit();
         if (Loader.isModLoaded("thermalexpansion") && enableThermalModule) Thermal.preInit();

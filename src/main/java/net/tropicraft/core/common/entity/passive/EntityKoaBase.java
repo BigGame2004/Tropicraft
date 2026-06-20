@@ -513,7 +513,7 @@ public class EntityKoaBase extends EntityVillager {
         return flag;
     }
     
-    private static final Field _buyingPlayer = ReflectionHelper.findField(EntityVillager.class, "field_70962_h", "buyingPlayer");
+    //private static final Field _buyingPlayer = ReflectionHelper.findField(EntityVillager.class, "field_70962_h", "buyingPlayer");
     private static final Field _buyingList = ReflectionHelper.findField(EntityVillager.class, "field_70963_i", "buyingList");
     
     @Override
@@ -1188,7 +1188,7 @@ public class EntityKoaBase extends EntityVillager {
 
         if (isInWater()) {
             //children have different hitbox size, use different values to keep them from getting stuck under docks and drowning
-            //changing this doesnt derp up their pathing like it does for adults
+            //changing this doesn't derp up their pathing like it does for adults
             if (isChild()) {
                 if (this.motionY < -0.1F) {
                     this.motionY += 0.25F;
@@ -1411,7 +1411,7 @@ public class EntityKoaBase extends EntityVillager {
         }
     }
 
-    //do not constantly use throughout night, as the night doesnt happen all on the same day
+    //do not constantly use throughout night, as the night doesn't happen all on the same day
     //use asap and store value
     public boolean isPartyNight() {
         long time = world.getWorldTime();

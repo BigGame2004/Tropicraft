@@ -34,7 +34,7 @@ public class Forestry {
 
     public static void init() {
 
-        // Read if forestry's Factory module is enabled and if so run the code below
+        // Read if forestry's Factory module is enabled run the code below
         if (ModuleHelper.isEnabled(ForestryModuleUids.FACTORY)) {
 
             ItemRegistryCore coreItems = getItems();
@@ -128,11 +128,12 @@ public class Forestry {
             // Let TC saplings be used in the arboretum
             FarmRegistry.getInstance().registerFarmables(ForestryFarmIdentifier.ARBOREAL, new FarmableSapling(new ItemStack(saplings, 1, 0), new ItemStack[0]));
 
-            // Makes all tropicraft sands
+            // Makes all tropicraft sands useable as arboretum soil
             FarmRegistry.getInstance().registerLogic(ForestryFarmIdentifier.ARBOREAL, FarmLogicArboreal::new).registerSoil(new ItemStack(sands, 1, 0), sands.getDefaultState());
             */
             // Crop Farm
 
+            // Lets tropicraft coffee be farmed using a crop farm
             if (ModuleHelper.isEnabled(ForestryModuleUids.FARMING) && ForestryFarmIdentifier.CROPS != null) {
                 FarmRegistry.getInstance().registerFarmables(ForestryFarmIdentifier.CROPS, new FarmableAgingCrop(new ItemStack(coffeeBeans, 1, 0), coffeePlant, (IProperty<Integer>) coffeePlant.getBlockState().getProperty("age"), 6));
             }

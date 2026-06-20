@@ -1,18 +1,20 @@
 ## DOES IT EVEN WORK? ##
 
 - Can volcano's actually erupt?
+- Easter Island Heads are supposed to spawn in the overworld too???
 - Jumping while having the fire boots equipped above lava will kick you to the bottom of the pool?
 - Monkeys do not get nausea from drinking piña coladas?
-- Easter Island Heads are supposed to spawn in the overworld too???
+- Bamboo fishing rods don't work at all???
 
 ## FIX ##
 
 - Fix bamboo fishing rods stacking if bought from koa Fisherman
 - Fix Koa Fisherman AI breaking when given bamboo fishing rods
-- Fix Koa Fisherman AI not being able to shoot darts with the dart gun
-- Fix Koa Fisherman being able to hook the other entities and breaking their AI
+- Fix Koa Fisherman being able to hook other entities and breaking their AI
 - Fix Koa Fisherman not being able to place fishing loot in the first half of double bamboo chests
-- Using Waila to look at Koa says they have villager professions???
+- Fix Koa Hunter AI not being able to shoot darts with the dart gun
+- Using Waila to look at Koa says they have villager professions??? (which was allegedly fixed back in 1.7???)
+- Fix Koa children growing up into villagers
 
 - Fix crash caused by incompatibility with buildcraft's biome systems, see "BiomeInitializer" and "BiomeProviderTropicraft" from BC and TC respectively
 - Fix incompatibility with Roughly Enough IDs
@@ -32,21 +34,22 @@
 - Fix bamboo, shaka, manganese, kelp and coral worldgen features spawning so square
 - Fix cascading worldgen lag while in the tropics
 - Fix tropics hostile mobs still tracking down players even in peaceful/creative
-- Fix Bamboo Flower Pots: - Not dropping the flower they contain (present as early as TC 7.0 for 1.10.2)
-                          - Trying to put a pineapple or iris flower in a bamboo flower pot will cause the item to be consumed but not displayed in the pot itself (present as early as TC 7.0 for 1.10.2)
-                          - Trying to middle mouse click (MMB3) in creative mode to pick the bamboo flower pot will give the player the vanilla flower pot (present as early as TC 7.0 for 1.10.2)
 - Add signs and pressure plates
 - Fix "Drifting into the tropics" loading screen being broken when Fermium is present
 - Fix buried treasures not spawning (in 1.7 they were marked by patches of purified sand)
+- Fix Bamboo Flower Pots: - Not dropping the flower they contain (present as early as TC 7.0 for 1.10.2 and somehow even more broken in 1.7)
+                          - Trying to put a pineapple or iris flower in a bamboo flower pot will cause the item to be consumed but not displayed in the pot itself (present as early as TC 7.0 for 1.10.2, most likely this relied on a bug from 1.7 that let flowerpots display any item or block inside of them that got fixed in 1.8)
+                          - Trying to middle mouse click (MMB3) in creative mode to pick the bamboo flower pot will give the player the vanilla flower pot (present as early as TC 7.0 for 1.10.2, but works perfectly fine in 1.7)
 - Fix Easter Island Heads not going back to sleep properly after being awakened by the player or getting angry from players walking nearby
-- Fix Coconut Bomb entity... more like coconut drill
 - Fix fence gates using the wrong soundtypes
 - Fix flippers not doing anything when config "enableSwimAnimation" is set to false or when Aqua Acrobatics is present
 - Fix Home Trees not rendering properly on the client side when first generated (somehow still an issue as of TC 9 for 1.21.8)
 - Fix miss matched block blast resistance for Chunk Slab and all fences
 - Fix right clicking on a mob in creative mode not giving you their spawn egg
-- The bottom of Home Trees almost exclusively spawns buried making the spawners at the bottom never get any use
 - Fix Z axis infighting on items like the love tropics shells and cocktails
+- The bottom of Home Trees almost exclusively spawns buried making the spawners at the bottom never get any use
+- Fix the bamboo crafting table being unable to use the "Move Items" option with JEI/HEI
+- Fix seaweed being able to spawn above the surface of the water
 
 ## MAYBE ##
 
@@ -54,6 +57,7 @@
 - Add a built-in resource pack to undo all texture changes
 - Add a Tropics worldtype
 - Add bamboo-glass boat?
+- Add tinkers construct compatibility, also figure out what that'd mean?
 - Add Unlimited Chiselworks compat
 - Add watefalls that lead into rivers?
 - Bring back coral sands spawning on beaches OR modify coral sands encyclopedia description
@@ -69,12 +73,15 @@
 - Rebalance tool stats?
 - Replace Tropical Water bucket with a forge bucket/make it act like a forge bucket?
 - What is Chunk Hammer and Chunk Wedge from TC 3.0.0?
-- Add tinkers construct compatibility, also figure out what that'd mean?
+- Finish reimplementing unused enchants from 1.6?
+- Change Koa Fisherman being able to fish tropical fishes while in other dimensions?
 
 ## TODO ##
 
-- Unify the 4 pina coladas into a single item
-- Add crafttweaker support for the drink mixer
+- Add crafttwweaker support for the Drink Mixer
+- Add JEI support for the Drink Mixer
+- Add JER support for tropical mobs
+- Add Journey Map mob icon support https://teamjm.github.io/journeymap-docs/5.9.x/tools/custom-mob-icons/
 - Compatibility with Future MC's stone cutter and flower types
 - Fill in all placeholder Encyclopedia entries
 - Find out why custom EIH eye blocks aren't working (- The blocks Easter Island Heads can spawn with as eyes are now controlled by a config (ACGaming))
@@ -85,26 +92,29 @@
 - Implement Leaf Ball (most likely removed due to its dependence on CoroUtil)
 - Implement Tame Wand (most likely removed due to its dependence on CoroUtil)
 - Make adult turtles drop turtle shells (- Fixed adult turtles not dropping turtle shells)
+- Make bamboo sticks usable as furnace fuel
 - Make fire armor craftable by throwing scale armor in lava
 - Make Iron Golems Ignore Tropi Creepers and Easter Island Heads
 - Make trapdoors work as furnace fuels
+- Make tropical water buckets vaporize in the nether OR replace them with forge
+- Pina coladas aren't treated as food by other mods
 - Place the Fire Pit at the center of koa villages, also redo it's smoke particles using CoroUtil's extended renderer
 - Reimplement Forrest Altar Ruins, see WorldGenForrestAltarRuin.java, most likely removed due to procedural structures never being reimplemented
 - Rewrite encyclopedia entity page type, make them not only get unlocked if you give yourself the spawn eggs of mobs
+- Unify the 4 pina coladas into a single item
 - Update bamboo flower pot item texture to better match the vanilla flower pot
 - Update languages: french, russian, chinese, etc.
 - Update sapling_palm.png, make it actually look like a palm tree
-- Make tropical water buckets vaporize in the nether OR replace them with forge
-- Make bamboo sticks usable as furnace fuel
-- Pina coladas aren't treated as food by other mods
+- Add custom damage source for darts
+- Add a config option to reduce or increase gen rates for overworld pineapples
 
 ## Dart Gun ##
+
+- Add Curare
+- Add Curare Bowl
 
 - Fix AIAshenShootDart behaviour making them shoot slowness arrows instead of paralyzing darts
 - Fix Dart gun rendering on Ashen
 
 - Implement Ashen being able to use the new dart gun
 - Implement darts with potion effects
-
-- Add Curare
-- Add Curare Bowl

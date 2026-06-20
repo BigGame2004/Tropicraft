@@ -25,7 +25,6 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -34,12 +33,9 @@ import net.tropicraft.core.common.block.tileentity.TileEntityFactory;
 import net.tropicraft.core.common.block.tileentity.TileEntityTropicraftFlowerPot;
 import net.tropicraft.core.common.enums.TropicraftFlowerType;
 import net.tropicraft.core.common.enums.TropicraftFlowers;
-import net.tropicraft.core.common.enums.TropicraftLogs;
 import net.tropicraft.core.common.enums.TropicraftSaplings;
 import net.tropicraft.core.registry.BlockRegistry;
 import net.tropicraft.core.registry.ItemRegistry;
-
-import static net.tropicraft.core.registry.BlockRegistry.flowerPot;
 
 public class BlockTropicraftFlowerPot extends BlockTropicraft implements ITileEntityProvider {
 
@@ -194,11 +190,14 @@ public class BlockTropicraftFlowerPot extends BlockTropicraft implements ITileEn
 	/**
 	 * And then forgets about the part where it needs to also drop the flower you put in it.
 	 */
-    @Nullable
     @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune) { return ItemRegistry.flowerPot; }
-    
-    @Override
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+	{
+		return ItemRegistry.flowerPot;
+		// Somehow get the flower inside the pot and drop that too
+	}
+
+	@Override
     protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, new IProperty[] {CONTENTS});
     }
@@ -299,6 +298,8 @@ public class BlockTropicraftFlowerPot extends BlockTropicraft implements ITileEn
                         flowerType = TropicraftFlowerType.EMPTY;
                     }
                 }
+				else if (block == BlockRegistry.pineapple) {}
+				else if (block == BlockRegistry.iris) {}
             }
         }
 
