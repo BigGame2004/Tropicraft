@@ -7,10 +7,7 @@ import com.google.common.collect.Lists;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockFenceGate;
-import net.minecraft.block.BlockPlanks;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -177,6 +174,8 @@ public class BlockRegistry extends TropicraftRegistry {
 	public static Block pineapple;
 	public static Block iris;
 	public static BlockCoffeeBush coffeePlant;
+
+	public static BlockCake pineappleCake;
 	
 	public static Block volcano;
 	
@@ -322,6 +321,8 @@ public class BlockRegistry extends TropicraftRegistry {
 		//	OreDictionary.registerOre("flower", pineapple);
 
 		coffeePlant = registerBlock(registry, new BlockCoffeeBush(), "coffee_bush", (IBlockItemRegistrar) null);
+
+		pineappleCake = registerBlock(registry, new BlockPineappleCake(), "pineapple_cake");
 
 		sands = registerBlock(registry, new BlockTropicraftSands(), "sand", new MultiBlockItemCreator(TropicraftSands.VALUES)
 				.withOredict("sand", TropicraftSands.PURIFIED.getMeta())

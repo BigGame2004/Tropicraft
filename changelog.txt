@@ -1,5 +1,6 @@
 7.1.9.128 for 1.12.2
 New
+- Added a Pineapple Cake (_BIG_G_)
 - Added an advancement for crafting Scale armor (_BIG_G_)
 - Poison Frog Skin can now be used to brew Awkward Potions into Poison Potions (hey at least it's 5% less useless until I figure out paralyzing darts) (_BIG_G_)
 - Reordered all encyclopedia language strings (_BIG_G_)

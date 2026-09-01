@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "CSC",
+    "WWW"
+  ],
+  "key": {
+    "P": {
+      "item": "#CROPPINEAPPLE"
+    },
+    "C": {
+      "item": "#CROPCOCONUT"
+    },
+    "W": {
+      "type": "forge:ore_dict",
+      "ore": "cropWheat"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "item": "tropicraft:pineapple_cake"
+  }
+}
