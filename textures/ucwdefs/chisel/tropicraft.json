@@ -1,0 +1,22 @@
+{
+  "modid": [
+    "chisel",
+    "tropicraft"
+  ],
+  "blocks": [
+    {
+      "from": {
+        "block": "tropicraft:plank#variant=palm"
+      },
+      "through": {
+        "block": "chisel:planks-oak",
+        "iterate": [
+          "variation"
+        ]
+      },
+      "based_upon": {
+        "state": "minecraft:planks#variant=oak"
+      }
+    }
+  ]
+}
