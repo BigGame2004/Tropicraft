@@ -21,7 +21,7 @@ import net.tropicraft.core.registry.BlockRegistry;
 
 public class BiomeTropicraft extends Biome {
 
-	public static final int[] DEFAULT_FLOWER_META = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 };
+	//public static final int[] DEFAULT_FLOWER_META = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 };
 
 	public static BiomeTropicraft tropicsOcean = (BiomeTropicraft) new BiomeTropicsOcean((new Biome.BiomeProperties("TROPICS_OCEAN")).setBaseHeight(-1.0F).setHeightVariation(0.4F).setTemperature(1.5F).setRainfall(1.25F)) {
 	    
@@ -81,8 +81,6 @@ public class BiomeTropicraft extends Biome {
         this.spawnableMonsterList.add(new SpawnListEntry(EntityEIH.class, 5, 1, 1));
         this.spawnableMonsterList.add(new SpawnListEntry(EntityTropiSkeleton.class, 8, 2, 8));
         this.spawnableMonsterList.add(new SpawnListEntry(EntityAshenHunter.class, 6, 3, 10));
-
-        //this.spawnableMonsterList.add(new SpawnListEntry(SpiderAdult.class, 50, 1, 3));
 	}
 
 	@Override

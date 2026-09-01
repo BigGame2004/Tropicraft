@@ -21,14 +21,15 @@ public final class MixerRecipes {
 		registerMixerRecipe(Drink.orangeade, Ingredient.orange, Ingredient.sugar, Ingredient.waterBucket);
 		registerMixerRecipe(Drink.lemonade, Ingredient.lemon, Ingredient.sugar, Ingredient.waterBucket);
 		registerMixerRecipe(Drink.blackCoffee, Ingredient.roastedCoffeeBean, Ingredient.waterBucket);
-		// !!!NOTE !!! Make sure pina colada remains the #4 recipe mkay - messes up achievements otherwise
+		// !!!NOTE !!! Make sure piña colada remains the #4 recipe mkay - messes up achievements otherwise
+		// I'm sure that won't be a problem anymore.
 		registerMixerRecipe(Drink.pinaColada, Ingredient.pineappleCubes, Ingredient.coconutChunk);
 		registerMixerRecipe(Drink.pinaColada, Ingredient.pineappleCubes, Ingredient.coconut);
 		registerMixerRecipe(Drink.pinaColada, Ingredient.pineapple, Ingredient.coconutChunk);
 		registerMixerRecipe(Drink.pinaColada, Ingredient.pineapple, Ingredient.coconut);
 		registerMixerRecipe(Drink.coconutWater, Ingredient.coconut, Ingredient.waterBucket);
 		registerMixerRecipe(Drink.maiTai, Ingredient.orange, Ingredient.lime, Ingredient.waterBucket);
-		//registerMixerRecipe(Drink.hotCocoa, Ingredient.milkBucket, Ingredient.cocoaBean);
+		registerMixerRecipe(Drink.hotCocoa, Ingredient.milkBucket, Ingredient.cocoaBean);
 	}
 
 	/**

@@ -14,7 +14,6 @@ import net.minecraft.util.ITickable;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
-import net.tropicraft.configuration.GenRates;
 import net.tropicraft.core.common.config.TropicsConfigs;
 import net.tropicraft.core.common.entity.EntityLavaBall;
 import net.tropicraft.core.common.volcano.VolcanoState;

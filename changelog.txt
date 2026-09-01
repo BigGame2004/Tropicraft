@@ -1,4 +1,17 @@
 7.1.9.128 for 1.12.2
+New
+- Added an advancement for crafting Scale armor (_BIG_G_)
+- Poison Frog Skin can now be used to brew Awkward Potions into Poison Potions (hey at least it's 5% less useless until I figure out paralyzing darts) (_BIG_G_)
+- Reordered all encyclopedia language strings (_BIG_G_)
+
+Changes
+- Tropical Spiders now have a small chance to spawn with a tropical skeleton riding them instead of a vanilla skeleton (_BIG_G_)
+
+Fixes
+- Fixed using a Sifter not also consuming the input item in survival mode (_BIG_G_)
+- Fixed lemon, grapefruit and orange sapling encyclopedia entries having mismatched icons (_BIG_G_)
+- Fixed the Mahogany Saplings not having an encyclopedia entry (_BIG_G_)
+- Fixed Iris flowers not having an encyclopedia entry (_BIG_G_)
 
 7.1.9.127 for 1.12.2
 New
@@ -650,7 +663,7 @@ Fixes
 3.0 for 1.2.5:
 
 2.5.1 for 1.0.0:
--Added bamboo fences, craftable like in this image: (which has been lost)
+- Added bamboo fences, craftable like in this image: (which has been lost)
 - Added back scale armor
 
 2.5 for 1.0.0:
@@ -674,7 +687,7 @@ Fixes
 - Bamboo no longer drops coconuts
 
 2.1 for b1.7.3:
-- Pina colada recipe no longer makes frog legs
+- Piña colada recipe no longer makes frog legs
 
 2.0 for b1.7.3:
 Nature
@@ -699,7 +712,7 @@ Misc
 - Hitting palm wood sounds like stone
 - Added Bamboo blocks, slabs, and stairs
 - Added Thatch blocks, slabs, and stairs
-- Fixed order of pina colada recipe (coconut chunks w/pineapple) so it doesn't matter
+- Fixed order of piña colada recipe (coconut chunks w/pineapple) so it doesn't matter
 - Bamboo cups are now made of actual bamboo (changed ingredient, same recipe)
 
 1.0 for b1.7.3:

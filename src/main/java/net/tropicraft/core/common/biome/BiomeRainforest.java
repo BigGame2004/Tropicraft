@@ -4,13 +4,13 @@ import java.util.Random;
 
 import net.minecraft.entity.passive.EntityOcelot;
 import net.minecraft.entity.passive.EntityParrot;
-import net.minecraft.util.SoundEvent;
+//import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.ChunkPrimer;
 import net.tropicraft.core.common.biome.decorators.BiomeDecoratorRainforest;
 import net.tropicraft.core.common.entity.hostile.EntityTreeFrog;
 import net.tropicraft.core.common.entity.hostile.EntityTropiSpider;
-import net.tropicraft.core.common.sound.TropicraftSounds;
+//import net.tropicraft.core.common.sound.TropicraftSounds;
 
 
 public class BiomeRainforest extends BiomeTropicraft {

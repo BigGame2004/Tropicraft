@@ -94,6 +94,9 @@ public class BlockSifter extends BlockTropicraft implements ITileEntityProvider 
 				tileentitysifta.addItemToSifter(new ItemStack(stack.getItem()));
 				tileentitysifta.startSifting();
 			}
+			if (!entityPlayer.capabilities.isCreativeMode) {
+				stack.shrink(1);
+			}
 		}
 		return true;
 	} // /o/ \o\ /o\ \o\ /o\ \o/ /o/ /o/ \o\ \o\ /o/ /o/ \o/ /o\ \o/ \o/ /o\ /o\ \o/ \o/ /o/ \o\o\o\o\o\o\o\o\o\ :D

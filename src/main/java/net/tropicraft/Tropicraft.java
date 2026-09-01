@@ -71,6 +71,7 @@ public class Tropicraft {
 	    TropicsConfigs.init(event.getSuggestedConfigurationFile());
 
 		CompatRegistry.preInit();
+		BrewingRegistry.addRecipes();
 		ColorHelper.init();
 		SoundRegistry.init();
 		//BlockRegistry.preInit();
@@ -88,6 +89,7 @@ public class Tropicraft {
 	public void init(FMLInitializationEvent event) {
 		TCPacketHandler.init();
 		CompatRegistry.init();
+		BrewingRegistry.addRecipes();
 	    //ItemRegistry.init();
 		//EntityRegistry.init();
 		proxy.init();

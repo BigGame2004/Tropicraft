@@ -2,6 +2,8 @@ package net.tropicraft.core.common.entity;
 
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.tropicraft.Info;
 
@@ -28,4 +30,9 @@ public abstract class EntityLand extends EntityCreature {
     	//give a default that isnt 1 since thats crazy fast
     	this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.25);
     }
+/*
+    protected ItemStack getSkullDrop()
+    {
+        return null;
+    }*/
 }

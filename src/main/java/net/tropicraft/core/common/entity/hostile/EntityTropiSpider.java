@@ -3,6 +3,7 @@ package net.tropicraft.core.common.entity.hostile;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.IEntityLivingData;
 import net.minecraft.entity.ai.EntityAIAttackMelee;
 import net.minecraft.entity.ai.EntityAILookIdle;
 import net.minecraft.entity.ai.EntityAISwimming;
@@ -19,6 +20,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 import net.tropicraft.core.common.Util;
 import net.tropicraft.core.common.entity.ai.EntityAIWanderNotLazy;
@@ -267,5 +269,35 @@ public class EntityTropiSpider extends EntitySpider implements IMob {
 		public static final byte ADULT = 0;
 		public static final byte MOTHER = 1;
 		public static final byte CHILD = 2;
+	}
+
+	/**
+	 * Called only once on an entity when first time spawned, via egg, mob spawner, natural spawning etc, but not called
+	 * when entity is reloaded from nbt. Mainly used for initializing attributes and inventory.
+	 *
+	 * The livingdata parameter is used to pass data between all instances during a pack spawn. It will be null on the
+	 * first call. Subclasses may check if it's null, and then create a new one and return it if so, initializing all
+	 * entities in the pack with the contained data.
+	 *
+	 * @return The IEntityLivingData to pass to this method for other instances of this entity class within the same
+	 * pack
+	 *
+	 * @param difficulty The current local difficulty
+	 * @param livingdata Shared spawn data. Will usually be null. (See return value for more information)
+	 */
+	@Override
+	public IEntityLivingData onInitialSpawn(DifficultyInstance difficulty, @Nullable IEntityLivingData livingdata)
+	{
+		livingdata = super.onInitialSpawn(difficulty, livingdata);
+
+		if (this.world.rand.nextInt(100) == 0)
+		{
+			EntityTropiSkeleton entitytropiskeleton = new EntityTropiSkeleton(this.world);
+			entitytropiskeleton.setLocationAndAngles(this.posX, this.posY, this.posZ, this.rotationYaw, 0.0F);
+			entitytropiskeleton.onInitialSpawn(difficulty, (IEntityLivingData)null);
+			this.world.spawnEntity(entitytropiskeleton);
+			entitytropiskeleton.startRiding(this);
+		}
+		return livingdata;
 	}
 }

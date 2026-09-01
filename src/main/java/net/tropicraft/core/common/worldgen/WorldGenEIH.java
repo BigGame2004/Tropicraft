@@ -233,6 +233,8 @@ public class WorldGenEIH extends TCGenBase {
             */
             placeEye(eyeOneX, eyeOneY, eyeOneZ, k1, tropiBlockMeta);
             placeEye(eyeTwoX, eyeTwoY, eyeTwoZ, k1, tropiBlockMeta);
+
+            System.err.println("Here comes Tom!" + " " + i + " " + j + " " + k);
         }
         return true;
     }

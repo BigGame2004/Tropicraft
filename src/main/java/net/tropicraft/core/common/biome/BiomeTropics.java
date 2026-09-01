@@ -1,6 +1,6 @@
 package net.tropicraft.core.common.biome;
 
-import net.minecraft.world.biome.Biome.SpawnListEntry;
+//import net.minecraft.world.biome.Biome.SpawnListEntry;
 import net.tropicraft.core.common.biome.decorators.BiomeDecoratorTropics;
 import net.tropicraft.core.common.entity.hostile.EntityTreeFrog;
 

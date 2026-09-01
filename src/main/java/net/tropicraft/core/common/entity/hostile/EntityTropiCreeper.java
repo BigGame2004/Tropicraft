@@ -272,9 +272,11 @@ public class EntityTropiCreeper extends EntityLand implements IMob {
     /**
      * Returns true if the creeper is powered by a lightning bolt.
      */
+	/*
     public boolean getPowered() {
         return ((Boolean)this.dataManager.get(POWERED)).booleanValue();
     }
+    */
 
 	/**
 	 * Params: (Float)Render tick. Returns the intensity of the creeper's flash when it is ignited.

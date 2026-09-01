@@ -72,6 +72,7 @@ public class EncyclopediaRegistry extends TropicraftRegistry {
         enc.addPage(new ItemPage("limeade", MixerRecipes.getItemStack(Drink.limeade)));
         enc.addPage(new ItemPage("orangeade", MixerRecipes.getItemStack(Drink.orangeade)));
         enc.addPage(new ItemPage("pinacolada", MixerRecipes.getItemStack(Drink.pinaColada)));
+        enc.addPage(new ItemPage("hotcocoa", MixerRecipes.getItemStack(Drink.hotCocoa)));
 
         // Worldgen
         enc.addPage(new SectionPage("world"));
@@ -198,11 +199,12 @@ public class EncyclopediaRegistry extends TropicraftRegistry {
         enc.addPage(new ItemPage("kapok", new ItemStack(BlockRegistry.leaves, 1, 2)));
         enc.addPage(new ItemPage("mahogany", new ItemStack(BlockRegistry.logs, 1, 0)));
         enc.addPage(new ItemPage("palmwood", new ItemStack(BlockRegistry.logs, 1, 1)));
-        enc.addPage(new ItemPage("lemonsapling", new ItemStack(BlockRegistry.saplings, 1, 2)));
+        enc.addPage(new ItemPage("lemonsapling", new ItemStack(BlockRegistry.saplings, 1, 3)));
         enc.addPage(new ItemPage("limesapling", new ItemStack(BlockRegistry.saplings, 1, 4)));
-        enc.addPage(new ItemPage("orangesapling", new ItemStack(BlockRegistry.saplings, 1, 3)));
-        enc.addPage(new ItemPage("grapefruitsapling", new ItemStack(BlockRegistry.saplings, 1, 1)));
+        enc.addPage(new ItemPage("orangesapling", new ItemStack(BlockRegistry.saplings, 1, 5)));
+        enc.addPage(new ItemPage("grapefruitsapling", new ItemStack(BlockRegistry.saplings, 1, 2)));
         enc.addPage(new ItemPage("palmsapling", new ItemStack(BlockRegistry.saplings, 1, 0)));
+        enc.addPage(new ItemPage("mahoganysapling", new ItemStack(BlockRegistry.saplings, 1, 1)));
 
         // Decor
         enc.addPage(new SectionPage("decor"));
@@ -210,10 +212,12 @@ public class EncyclopediaRegistry extends TropicraftRegistry {
         enc.addPage(new ItemPage("palmdoor", new ItemStack(ItemRegistry.palmDoor)));
         enc.addPage(new ItemPage("palmfence", new ItemStack(BlockRegistry.palmFence)));
         enc.addPage(new ItemPage("palmfencegate", new ItemStack(BlockRegistry.palmFenceGate)));
+        enc.addPage(new ItemPage("palm_trapdoor", new ItemStack(ItemRegistry.palmTrapdoor)));
         enc.addPage(new ItemPage("mahoganyplanks", new ItemStack(BlockRegistry.planks, 1, 0)));
         enc.addPage(new ItemPage("mahoganydoor", new ItemStack(ItemRegistry.mahoganyDoor)));
         enc.addPage(new ItemPage("mahoganyfence", new ItemStack(BlockRegistry.mahoganyFence)));
         enc.addPage(new ItemPage("mahoganyfencegate", new ItemStack(BlockRegistry.mahoganyFenceGate)));
+        enc.addPage(new ItemPage("mahogany_trapdoor", new ItemStack(ItemRegistry.mahoganyTrapdoor)));
         enc.addPage(new ItemPage("bambooblock", new ItemStack(BlockRegistry.bundles, 1, 1)));
         enc.addPage(new ItemPage("bamboochest", new ItemStack(BlockRegistry.bambooChest)));
         enc.addPage(new ItemPage("bamboodoor", new ItemStack(ItemRegistry.bambooDoor)));
@@ -222,11 +226,7 @@ public class EncyclopediaRegistry extends TropicraftRegistry {
         enc.addPage(new ItemPage("bamboostick", new ItemStack(ItemRegistry.bambooStick)));
         enc.addPage(new ItemPage("bamboo_ladder", new ItemStack(BlockRegistry.bambooLadder)));
         enc.addPage(new ItemPage("bamboo_crafting_table", new ItemStack(BlockRegistry.bambooCraftingTable)));
-
         enc.addPage(new ItemPage("bamboo_trapdoor", new ItemStack(ItemRegistry.bambooTrapdoor)));
-        enc.addPage(new ItemPage("mahogany_trapdoor", new ItemStack(ItemRegistry.mahoganyTrapdoor)));
-        enc.addPage(new ItemPage("palm_trapdoor", new ItemStack(ItemRegistry.palmTrapdoor)));
-        enc.addPage(new ItemPage("thatch_trapdoor", new ItemStack(ItemRegistry.thatchTrapdoor)));
 
         enc.addPage(new ItemPage("tropiframe", new ItemStack(ItemRegistry.bambooItemFrame)));
         enc.addPage(new ItemPage("chunkohead", new ItemStack(BlockRegistry.chunk)));
@@ -237,9 +237,11 @@ public class EncyclopediaRegistry extends TropicraftRegistry {
         enc.addPage(new ItemPage("thatchdoor", new ItemStack(ItemRegistry.thatchDoor)));
         enc.addPage(new ItemPage("thatchfence", new ItemStack(BlockRegistry.thatchFence)));
         enc.addPage(new ItemPage("thatchfencegate", new ItemStack(BlockRegistry.thatchFenceGate)));
+        enc.addPage(new ItemPage("thatch_trapdoor", new ItemStack(ItemRegistry.thatchTrapdoor)));
 
         // Flowers
         enc.addPage(new SectionPage("flowers"));
+        enc.addPage(new ItemPage("iris", new ItemStack(BlockRegistry.iris)));
         for (TropicraftFlowers flower : TropicraftFlowers.VALUES) {
             enc.addPage(new ItemPage(flower.getSimpleName(), flower.makeStack(BlockRegistry.flowers)));
         }
@@ -290,7 +292,6 @@ public class EncyclopediaRegistry extends TropicraftRegistry {
 
         enc.addPage(new ItemPage("sifter", new ItemStack(BlockRegistry.sifter)));
         //TODO enc.addPage(new ItemPage("snaretrap", new ItemStack(ItemRegistry.snareTrap)));
-        //TODO enc.addPage(new ItemPage("snorkel", new ItemStack(ItemRegistry.snorkel)));
 
         enc.addPage(new SectionPage("lovetropics"));
         enc.addPage(new LoveTropicsPage("ltinfo"));

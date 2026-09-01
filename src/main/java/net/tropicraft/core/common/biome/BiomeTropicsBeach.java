@@ -1,8 +1,8 @@
 package net.tropicraft.core.common.biome;
 
-import net.minecraft.util.SoundEvent;
+//import net.minecraft.util.SoundEvent;
 import net.tropicraft.core.common.biome.decorators.BiomeDecoratorTropicsBeach;
-import net.tropicraft.core.common.sound.TropicraftSounds;
+//import net.tropicraft.core.common.sound.TropicraftSounds;
 import net.tropicraft.core.registry.BlockRegistry;
 
 public class BiomeTropicsBeach extends BiomeTropicraft {

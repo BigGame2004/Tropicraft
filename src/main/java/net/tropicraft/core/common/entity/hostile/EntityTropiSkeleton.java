@@ -101,14 +101,12 @@ public class EntityTropiSkeleton extends EntityLandHostile implements IMob {
     public boolean getCanSpawnHere() {
         return this.world.getDifficulty() != EnumDifficulty.PEACEFUL && this.isValidLightLevel() && super.getCanSpawnHere();
     }
-/*
+
     @Nullable
     protected ResourceLocation getLootTable() {
         return tropiSkeleton;
     }
-
-    */
-
+/*
     @Override
     protected void dropFewItems(boolean par1, int par2) {
         int j = this.rand.nextInt(2) + this.rand.nextInt(1 + par2);
@@ -123,7 +121,7 @@ public class EntityTropiSkeleton extends EntityLandHostile implements IMob {
             this.dropItem(ItemRegistry.bambooSpear, 1);
         }
     }
-
+*/
     @Override
     protected SoundEvent getAmbientSound() {
         return SoundEvents.ENTITY_SKELETON_AMBIENT;

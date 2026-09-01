@@ -1,10 +1,10 @@
 ## DOES IT EVEN WORK? ##
 
-- Can volcano's actually erupt?
-- Easter Island Heads are supposed to spawn in the overworld too???
+- Easter Island Head structures are supposed to spawn in the overworld too???
 - Jumping while having the fire boots equipped above lava will kick you to the bottom of the pool?
 - Monkeys do not get nausea from drinking piña coladas?
 - Bamboo fishing rods don't work at all???
+- Most biomes do not seem to get registered properly if at all?
 
 ## FIX ##
 
@@ -25,7 +25,7 @@
 
 - Fix chunk o head blocks not covering the inside of volcano's all the way to bedrock
 - Fix massive lag spike upon trying to cover up a volcano
-- Fix volcano's not being able to erupt
+- Fix volcano's not being able to erupt (was removed in 1.7 because it was too distributive for the love tropics events)
 
 - Fix lighting on thatch roofing
 - Fix water logged tropicraft fences making a gap in the water model
@@ -39,7 +39,7 @@
 - Fix buried treasures not spawning (in 1.7 they were marked by patches of purified sand)
 - Fix Bamboo Flower Pots: - Not dropping the flower they contain (present as early as TC 7.0 for 1.10.2 and somehow even more broken in 1.7)
                           - Trying to put a pineapple or iris flower in a bamboo flower pot will cause the item to be consumed but not displayed in the pot itself (present as early as TC 7.0 for 1.10.2, most likely this relied on a bug from 1.7 that let flowerpots display any item or block inside of them that got fixed in 1.8)
-                          - Trying to middle mouse click (MMB3) in creative mode to pick the bamboo flower pot will give the player the vanilla flower pot (present as early as TC 7.0 for 1.10.2, but works perfectly fine in 1.7)
+                          - Trying to middle mouse click (MMB3) in creative mode to pick the bamboo flower pot will give the player the vanilla flower pot (present as early as TC 7.0 for 1.10.2, but works perfectly fine in 1.7, could be a namespace conflict)
 - Fix Easter Island Heads not going back to sleep properly after being awakened by the player or getting angry from players walking nearby
 - Fix fence gates using the wrong soundtypes
 - Fix flippers not doing anything when config "enableSwimAnimation" is set to false or when Aqua Acrobatics is present
@@ -50,6 +50,8 @@
 - The bottom of Home Trees almost exclusively spawns buried making the spawners at the bottom never get any use
 - Fix the bamboo crafting table being unable to use the "Move Items" option with JEI/HEI
 - Fix seaweed being able to spawn above the surface of the water
+- Shipwrecks spawn lots of air pockets when replacing blocks
+- Encyclopedia entries for tropical drinks all list pina colada recipes
 
 ## MAYBE ##
 
@@ -64,17 +66,20 @@
 - Bring back placeable cocktails?
 - Disable collision and make Bamboo Shoots break instantly like in TC 1.5.2?
 - Fix Donation Block no longer working?
-- Generate podzol in surface cases?
+- Generate podzol in surface caves?
 - Implement alternative fishing rods with their bait items as fuel?
 - Implement Lava Slinger? https://tropicraft.fandom.com/wiki/Lava_slinger
-- Implement Souzium Aqua Ore/way to craft the tools?
+- Implement Souzium Aqua Ore or some other way to craft the tools?
 - Make koa trades unlock like villager trades?
-- Make the tiki torch look more like a tiki torch
+- Make the tiki torch look more like a tiki torch?
 - Rebalance tool stats?
 - Replace Tropical Water bucket with a forge bucket/make it act like a forge bucket?
 - What is Chunk Hammer and Chunk Wedge from TC 3.0.0?
-- Finish reimplementing unused enchants from 1.6?
+- Finish reimplementing unused enchants from 1.4-1.6?
 - Change Koa Fisherman being able to fish tropical fishes while in other dimensions?
+- Bring back the old magic mushroom encyclopedia description?
+    "Found only in rainforests, these mushrooms are rumored to have contributed to Nigel Winthrope's disappearance."
+- Bring back Ashen Mask blur overlay?
 
 ## TODO ##
 
@@ -100,7 +105,7 @@
 - Pina coladas aren't treated as food by other mods
 - Place the Fire Pit at the center of koa villages, also redo it's smoke particles using CoroUtil's extended renderer
 - Reimplement Forrest Altar Ruins, see WorldGenForrestAltarRuin.java, most likely removed due to procedural structures never being reimplemented
-- Rewrite encyclopedia entity page type, make them not only get unlocked if you give yourself the spawn eggs of mobs
+- The encyclopedia's entity page type is missing a "discover" function thus piggybacking off the item page's implementation of said function making them impossible to unlock without cheats
 - Unify the 4 pina coladas into a single item
 - Update bamboo flower pot item texture to better match the vanilla flower pot
 - Update languages: french, russian, chinese, etc.

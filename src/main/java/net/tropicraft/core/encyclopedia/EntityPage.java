@@ -98,4 +98,16 @@ public class EntityPage extends ItemPage {
     public int getHeaderHeight() {
         return (int) (entity == null ? 0 : entity.height * 33) + 12;
     }
+
+    // This function is supposed to check if the player is within a five block radius of a specific entity when
+    // opening the encyclopedia and unlock their respective entry, but as of right now it just unlocks every
+    // entity entry the moment the book is opened. Best to look at KoaPage.java's implmementation of the function.
+    /*
+    @Override
+    public boolean discover(World world, EntityPlayer player) {
+        Vec3d pos = player.getPositionVector();
+        List<? extends EntityLivingBase> inRange = world.getEntitiesWithinAABB(EntityLivingBase.class, new AxisAlignedBB(pos.addVector(-5, -5, -5), pos.addVector(5, 5, 5)));
+        return inRange.stream().count() > 0;
+    }
+    */
 }

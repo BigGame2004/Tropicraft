@@ -1,0 +1,58 @@
+{
+  "display": {
+    "icon": {
+      "item": "tropicraft:scale_chestplate"
+    },
+    "title": {
+      "translate": "achievement.tc_craft_scale_armor.name"
+    },
+    "description": {
+      "translate": "achievement.tc_craft_scale_armor.desc"
+    },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "tropicraft:tropics/drink_pina_colada",
+  "criteria": {
+    "iron_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "tropicraft:scale_helmet"
+          }
+        ]
+      }
+    },
+    "iron_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "tropicraft:scale_chestplate"
+          }
+        ]
+      }
+    },
+    "iron_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "tropicraft:scale_leggings"
+          }
+        ]
+      }
+    },
+    "iron_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "tropicraft:scale_boots"
+          }
+        ]
+      }
+    }
+  }
+}

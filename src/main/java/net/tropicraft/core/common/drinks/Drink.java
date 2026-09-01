@@ -18,7 +18,7 @@ public class Drink {
 	public static final Drink coconutWater = new Drink(7, 0xdfdfdf, "coconut_water", TextFormatting.WHITE).addAction(new DrinkActionPotion(MobEffects.SPEED, 5, 1));
 	public static final Drink maiTai = new Drink(8, 0xff772e, "mai_tai", TextFormatting.GOLD).addAction(new DrinkActionPotion(MobEffects.NAUSEA, 5, 0));
 	public static final Drink blackCoffee = new Drink(5, 0x68442c, "black_coffee", TextFormatting.BLACK).addAction(new DrinkActionPotion(MobEffects.REGENERATION, 5, 1)).addAction(new DrinkActionPotion(MobEffects.SPEED, 5, 2));
-	//public static final Drink hotCocoa = new Drink(9, 0x7F3C10, "hot_cocoa", TextFormatting.WHITE).addAction(new DrinkActionPotion(MobEffects.ABSORPTION, 10, 1));
+	public static final Drink hotCocoa = new Drink(9, 0x7F3C10, "hot_cocoa", TextFormatting.WHITE).addAction(new DrinkActionPotion(MobEffects.ABSORPTION, 10, 1));
 
 	public int drinkId;
 	public int color;
