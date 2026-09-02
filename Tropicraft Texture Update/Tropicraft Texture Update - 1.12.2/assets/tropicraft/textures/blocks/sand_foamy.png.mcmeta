@@ -1,0 +1,19 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "edges",
+		"layer": "CUTOUT",
+        "textures": [
+            "tropicraft:block/sand_foamy_ctm",
+            "tropicraft:block/foamy"
+        ],
+        "extra": {
+            "connect_to": [{ 
+                "block": "tropicraft:sand",
+                "predicate": {
+                    "variant": "purified"
+                } 
+            }]
+        }
+    }
+}

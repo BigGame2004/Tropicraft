@@ -1,5 +1,9 @@
 #PARSE_ESCAPES
 
+# Resource Pack
+
+resourcePack.tropicraft.texture_update.description=A sneak-peak! By Hexablu and Endergized.
+
 # Block localizations
 tile.tropicraft.air_compressor.name=Air Compressor
 tile.tropicraft.bamboo_chest.name=Bamboo Chest

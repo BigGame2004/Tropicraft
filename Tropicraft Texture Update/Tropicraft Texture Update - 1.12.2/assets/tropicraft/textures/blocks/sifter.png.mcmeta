@@ -1,0 +1,10 @@
+{
+    "ctm":{
+        "ctm_version": 1,
+        "type":"CTM",
+        "layer":"CUTOUT",
+        "textures":[
+            "tropicraft:blocks/sifter_ctm"
+        ]
+    }
+}

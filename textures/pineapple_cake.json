@@ -1,0 +1,6 @@
+{
+    "modid": "tropicraft",
+    "foods": {
+      "CAKES": ["tropicraft:pineapple_cake"]
+    }
+}

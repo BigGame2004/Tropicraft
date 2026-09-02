@@ -1,5 +1,9 @@
 package net.tropicraft.core.proxy;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -67,6 +71,8 @@ import net.tropicraft.core.registry.EntityRenderRegistry;
 import net.tropicraft.core.registry.ItemRegistry;
 import net.tropicraft.core.registry.TileEntityRenderRegistry;
 
+import static net.tropicraft.core.common.config.TropicsConfigs.*;
+
 public class ClientProxy extends CommonProxy {
     
     private final Map<Block, IStateMapper> stateMappers = new HashMap<>();
@@ -98,6 +104,9 @@ public class ClientProxy extends CommonProxy {
 	public void init() {
 		super.init();
 
+		generateTexturePack();
+		//generateCFBHcompat();
+
 		ItemRegistry.clientProxyInit();
 		BlockRegistry.clientProxyInit();
 
@@ -112,6 +121,58 @@ public class ClientProxy extends CommonProxy {
 		// For rendering drink mixer in inventory
 		ForgeHooksClient.registerTESRItemStack(Item.getItemFromBlock(BlockRegistry.drinkMixer), 0, TileEntityDrinkMixer.class);
         ForgeHooksClient.registerTESRItemStack(Item.getItemFromBlock(BlockRegistry.airCompressor), 0, TileEntityAirCompressor.class);
+	}
+
+	public void generateTexturePack()
+	{
+		try
+		{
+			File resourcePacks = Minecraft.getMinecraft().getResourcePackRepository().getDirResourcepacks().getCanonicalFile();
+
+			File zip = new File(resourcePacks + "");
+
+			File[] files = new File[] {zip};
+
+			if (enableTextureUpdatePack)
+			{
+				for (File file : files)
+				{
+					if (!file.exists())
+					{
+						file.mkdirs();
+					}
+				}
+
+				generateFile("Tropicraft Texture Update - 1.12.2.zip", "Tropicraft Texture Update - 1.12.2.zip", zip.getAbsolutePath());
+			}
+		}
+		catch (IOException ignore) { }
+	}
+
+	public void generateFile(String input, String name, String path)
+	{
+		try {
+			File file = new File(path + "/" + name);
+
+			if (!file.exists())
+			{
+				InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(input);
+				FileOutputStream outputStream = new FileOutputStream(file);
+
+				if (inputStream != null)
+				{
+					int i;
+					while ((i = inputStream.read()) != -1)
+					{
+						outputStream.write(i);
+					}
+
+					inputStream.close();
+					outputStream.close();
+				}
+			}
+		}
+		catch (IOException ignore) { }
 	}
 	
 	private void ignoreAll(@Nonnull Block... blocks) {

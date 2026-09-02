@@ -1,18 +1,21 @@
 7.1.9.128 for 1.12.2
 New
 - Added a Pineapple Cake (_BIG_G_)
+- Added a textures update resource pack that will be included in your resource pack folder upon opening the game, this can be turned off in the configs (_BIG_G_)
 - Added an advancement for crafting Scale armor (_BIG_G_)
 - Poison Frog Skin can now be used to brew Awkward Potions into Poison Potions (hey at least it's 5% less useless until I figure out paralyzing darts) (_BIG_G_)
-- Reordered all encyclopedia language strings (_BIG_G_)
 
 Changes
+- Tiki torches and Iris flowers no longer drop anything if broken in creative mode (_BIG_G_)
 - Tropical Spiders now have a small chance to spawn with a tropical skeleton riding them instead of a vanilla skeleton (_BIG_G_)
 
 Fixes
-- Fixed using a Sifter not also consuming the input item in survival mode (_BIG_G_)
+- Fixed Iris flowers not having an encyclopedia entry (_BIG_G_)
 - Fixed lemon, grapefruit and orange sapling encyclopedia entries having mismatched icons (_BIG_G_)
 - Fixed the Mahogany Saplings not having an encyclopedia entry (_BIG_G_)
-- Fixed Iris flowers not having an encyclopedia entry (_BIG_G_)
+- Fixed Tropical Water, Portal Water and Portal Wall not being visible with waila (_BIG_G_)
+- Fixed using a Sifter not also consuming the input item in survival mode (_BIG_G_)
+- Fixed using the pick block key on a bamboo flower pot returning the vanilla flower pot instead, also fixes Waila showing the vanilla flower pot when looking at a bamboo pot (_BIG_G_)
 
 7.1.9.127 for 1.12.2
 New
