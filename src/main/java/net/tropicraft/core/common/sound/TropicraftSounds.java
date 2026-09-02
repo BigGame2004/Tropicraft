@@ -46,8 +46,8 @@ public class TropicraftSounds {
     @SoundName("headlaughing")
     public static SoundEvent HEAD_LAUGHING = null;
     
-    @SoundName("headattack")
-    public static SoundEvent HEAD_ATTACK = null;
+    //@SoundName("headattack")
+    //public static SoundEvent HEAD_ATTACK = null;
     
     @SoundName("headshort")
     public static SoundEvent HEAD_SHORT = null;
@@ -79,11 +79,11 @@ public class TropicraftSounds {
     @SoundName("portal")
     public static SoundEvent PORTAL = null;
 
-    @SoundName("softwaves")
-    public static SoundEvent SOFTWAVES = null;
+    //@SoundName("softwaves")
+    //public static SoundEvent SOFTWAVES = null;
 
-    @SoundName("rainforest")
-    public static SoundEvent RAINFOREST = null;
+    //@SoundName("rainforest")
+    //public static SoundEvent RAINFOREST = null;
 
     @SoundName("monkeyhurt")
     public static SoundEvent MONKEYHURT = null;
@@ -94,14 +94,14 @@ public class TropicraftSounds {
     @SoundName("monkeyliving")
     public static SoundEvent MONKEYLIVING = null;
 
-    @SoundName("monkeydrinking")
-    public static SoundEvent MONKEYDRINKING = null;
+    //@SoundName("monkeydrinking")
+    //public static SoundEvent MONKEYDRINKING = null;
 
     @SoundName("monkeyhiccup")
     public static SoundEvent MONKEYHICCUP = null;
 
-    @SoundName("darthit")
-    public static SoundEvent DARTHIT = null;
+    //@SoundName("darthit")
+    //public static SoundEvent DARTHIT = null;
 
     @SoundName("dartblow")
     public static SoundEvent DARTBLOW = null;

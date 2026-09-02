@@ -19,7 +19,7 @@ import net.tropicraft.core.registry.ItemRegistry;
 public class EntityDart extends EntityArrow implements IProjectile, IEntityAdditionalSpawnData {
     private static final DataParameter<Integer> DART_TYPE = EntityDataManager.createKey(EntityDart.class, DataSerializers.VARINT);
 
-    // somehow make this entity use the DARTHIT sound event
+    // TODO somehow make this entity use the DARTHIT sound event
 
     public EntityDart(World world) {
         super(world);

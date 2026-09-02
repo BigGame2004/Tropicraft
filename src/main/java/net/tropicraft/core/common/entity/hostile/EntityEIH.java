@@ -28,9 +28,9 @@ import static net.tropicraft.core.registry.LootRegistry.eih;
 public class EntityEIH extends EntityLandHostile implements IMob {
 	//0 = sleep, 1 = aware, 2 = angry
 	private static final DataParameter<Integer> STATE = EntityDataManager.<Integer>createKey(EntityEIH.class, DataSerializers.VARINT);
-	public int STATE_SLEEP = 0;
+	//public int STATE_SLEEP = 0;
 	//this state was never actually used
-	public int STATE_AWARE = 1;
+	//public int STATE_AWARE = 1;
 	public int STATE_ANGRY = 2;
 
 	public EntityEIH(World world) {
