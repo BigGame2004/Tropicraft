@@ -17,8 +17,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.MobEffects;
-import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
@@ -35,6 +35,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.tropicraft.core.common.ChatUtil;
 import net.tropicraft.core.common.dimension.TropicraftWorldUtils;
 import net.tropicraft.core.common.sound.TropicraftSounds;
+import net.tropicraft.core.registry.ItemRegistry;
 
 public class BlockTropicsPortal extends BlockFluidClassic {
 
@@ -290,5 +291,10 @@ public class BlockTropicsPortal extends BlockFluidClassic {
 			boolean flag = isExceptBlockForAttachWithPiston(block) || block instanceof BlockStairs;
 			return !flag && iblockstate.getBlockFaceShape(worldIn, pos, side) == BlockFaceShape.SOLID;
 		}
+	}
+
+	@Override
+	public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
+		return new ItemStack(ItemRegistry.tropicsWaterBucket);
 	}
 }
