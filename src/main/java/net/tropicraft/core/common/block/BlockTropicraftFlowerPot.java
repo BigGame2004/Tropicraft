@@ -29,6 +29,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.tropicraft.Tropicraft;
 import net.tropicraft.core.common.block.tileentity.TileEntityFactory;
 import net.tropicraft.core.common.block.tileentity.TileEntityTropicraftFlowerPot;
 import net.tropicraft.core.common.enums.TropicraftFlowerType;
@@ -150,7 +151,7 @@ public class BlockTropicraftFlowerPot extends BlockTropicraft implements ITileEn
 			}
 		}
 
-		return new ItemStack(Items.FLOWER_POT);
+		return new ItemStack(ItemRegistry.flowerPot);
 	}
 
 	@Override
