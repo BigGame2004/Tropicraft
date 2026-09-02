@@ -33,6 +33,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.tropicraft.core.common.block.tileentity.TileEntityTropicraftFlowerPot;
 import net.tropicraft.core.registry.BlockRegistry;
 
 public class BlockTikiTorch extends BlockTropicraft implements ITropicraftBlock {
@@ -227,7 +228,7 @@ public class BlockTikiTorch extends BlockTropicraft implements ITropicraftBlock 
 	@Override
     public void onBlockHarvested(World world, BlockPos pos, IBlockState state, EntityPlayer player) {
         super.onBlockHarvested(world, pos, state, player);
-        if (!world.isRemote) {
+        if (!world.isRemote && !player.capabilities.isCreativeMode) {
             switch (state.getValue(SECTION)) {
             case MIDDLE:
                 dropBlockAsItem(world, pos, world.getBlockState(pos.up()), 0);

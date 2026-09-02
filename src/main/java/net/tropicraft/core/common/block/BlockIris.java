@@ -6,6 +6,7 @@ import javax.annotation.Nullable;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
+import net.minecraft.block.BlockDoor;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
@@ -142,6 +143,23 @@ public class BlockIris extends BlockBush implements ITropicraftBlock {
 	@Override
     public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player) {
     	super.onBlockHarvested(worldIn, pos, state, player);
+		BlockPos blockpos = pos.down();
+		BlockPos blockpos1 = pos.up();
+
+		if (!player.capabilities.isCreativeMode && state.getValue(HALF) == PlantHalf.UPPER && worldIn.getBlockState(blockpos).getBlock() == this)
+		{
+			worldIn.setBlockToAir(blockpos);
+		}
+
+		if (state.getValue(HALF) == PlantHalf.LOWER && worldIn.getBlockState(blockpos1).getBlock() == this)
+		{
+			if (!player.capabilities.isCreativeMode)
+			{
+				worldIn.setBlockToAir(pos);
+			}
+
+			worldIn.setBlockToAir(blockpos1);
+		}
     }
 	
 	@Override
