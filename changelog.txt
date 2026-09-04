@@ -1,5 +1,6 @@
 7.1.9.128 for 1.12.2
 New
+- Added a new drink: Hot Cocoa, will give you regeneration for 10 seconds (_BIG_G_)
 - Added a Pineapple Cake (_BIG_G_)
 - Added a textures update resource pack that will be included in your resource pack folder upon opening the game, this can be turned off in the configs (_BIG_G_)
 - Added an advancement for crafting Scale armor (_BIG_G_)

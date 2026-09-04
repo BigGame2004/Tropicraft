@@ -8,6 +8,7 @@
 
 ## FIX ##
 
+- The spawn coconut logic inside BlockTropicraftLog.java is able to both detect palm leaf blocks one block above a palm log even if there's an air gap between the two and even replace blocks on the sides of the logs with coconuts
 - Fix bamboo fishing rods stacking if bought from koa Fisherman
 - Fix Koa children growing up into villagers
 - Fix Koa Fisherman AI breaking when given bamboo fishing rods
@@ -53,10 +54,13 @@
 
 ## MAYBE ##
 
+- Make pineapple cake only stack to 1?
 - Add "Assorted Nuts"...?
 - Add a built-in resource pack to undo all texture changes
 - Add a Tropics worldtype
 - Add bamboo-glass boat?
+- Add clay to the tropics?
+- Add somehow cocoa beans to the tropics?
 - Add tinkers construct compatibility, also figure out what that'd mean?
 - Add Unlimited Chiselworks compat
 - Add watefalls that lead into rivers?
