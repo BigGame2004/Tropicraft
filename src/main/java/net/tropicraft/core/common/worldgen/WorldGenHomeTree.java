@@ -285,7 +285,7 @@ public class WorldGenHomeTree extends TCGenBase {
 		Block bID = TCGenUtils.getBlock(worldObj, i, j, k);
 		if(force || bID == Blocks.WATER || bID == Blocks.FLOWING_WATER || bID == BlockRegistry.tropicsWater 
 				|| bID == Blocks.AIR) {
-			return TCGenUtils.setBlockState(worldObj, i, j, k, state, 0);
+			return TCGenUtils.setBlockState(worldObj, i, j, k, state, TCGenBase.blockGenNotifyFlag);
 		}
 		return false;
 	}
